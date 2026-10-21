@@ -38,22 +38,38 @@
   }
 
   /* ============================================================
-     Navbar scroll effect
+     Navbar scroll effect (Optimized with rAF to prevent forced reflow)
   ============================================================ */
   function initNavbarScroll() {
     const navbar = document.querySelector('.site-navbar');
     if (!navbar) return;
 
+    let ticking = false;
+    let isScrolled = false;
+
+    function updateNavbar() {
+      const scrolled = window.scrollY > 40;
+      if (scrolled !== isScrolled) {
+        isScrolled = scrolled;
+        if (isScrolled) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      }
+      ticking = false;
+    }
+
     function onScroll() {
-      if (window.scrollY > 40) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
       }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    // Defer initial check to requestAnimationFrame to avoid synchronous layout read during DOMContentLoaded
+    window.requestAnimationFrame(updateNavbar);
   }
 
   /* ============================================================
