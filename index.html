@@ -69,15 +69,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-  <!-- Core Google Fonts with display=optional to prevent FOUT & layout shifts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=optional">
+  <!-- Google Fonts: Non-render-blocking. display=optional avoids FOUT/CLS. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=optional">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=optional"></noscript>
 
   <!-- Preload high priority Hero LCP image -->
   <link rel="preload" as="image" href="assets/img/hero-hampers.webp" fetchpriority="high">
 
-  <!-- Core Stylesheets: Loaded directly so first paint has 100% complete layout without any CLS -->
+  <!-- Core Stylesheets: Synchronous for zero CLS (purged bootstrap = 44KB, style.css = 39KB) -->
   <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
 
   <!-- Schema.org JSON-LD (Rich Snippets, AEO & GEO Structured Data 2026-2027) -->
   <script type="application/ld+json">

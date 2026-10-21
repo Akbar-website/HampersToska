@@ -68,10 +68,10 @@
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    // Check initial scroll position only if page was loaded scrolled
-    if ((window.scrollY || window.pageYOffset || 0) > 0) {
-      updateNavbar();
-    }
+    // Defer initial check to rAF so it never causes a forced reflow on DCL
+    requestAnimationFrame(function() {
+      if ((window.scrollY || window.pageYOffset || 0) > 0) updateNavbar();
+    });
   }
 
   /* ============================================================
@@ -483,16 +483,23 @@
      Init all
   ============================================================ */
   document.addEventListener('DOMContentLoaded', function () {
+    // Critical path: run immediately
     initWhatsAppLinks();
     initNavbarScroll();
     initActiveNav();
-    initFadeUp();
-    initPackageFilter();
-    initPackageModal();
-    initQuoteForm();
-    initSmoothAnchor();
     initCopyrightYear();
-    initCtaTracking();
+    initSmoothAnchor();
+
+    // Non-critical: defer one frame so main thread is free for first paint
+    requestAnimationFrame(function() {
+      setTimeout(function() {
+        initFadeUp();
+        initPackageFilter();
+        initPackageModal();
+        initQuoteForm();
+        initCtaTracking();
+      }, 0);
+    });
   });
 
 })();
