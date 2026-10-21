@@ -1,0 +1,32 @@
+# robots.txt — Hampers Toska (2026/2027 Edition)
+# https://hamperstoska.vercel.app/robots.txt
+
+User-agent: *
+Allow: /
+
+# Explicitly allow AI / Answer Engine Bots for AEO
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://hamperstoska.vercel.app/sitemap.xml
