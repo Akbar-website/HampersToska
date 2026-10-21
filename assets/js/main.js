@@ -68,8 +68,10 @@
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    // Defer initial check to requestAnimationFrame to avoid synchronous layout read during DOMContentLoaded
-    window.requestAnimationFrame(updateNavbar);
+    // Check initial scroll position only if page was loaded scrolled
+    if ((window.scrollY || window.pageYOffset || 0) > 0) {
+      updateNavbar();
+    }
   }
 
   /* ============================================================
