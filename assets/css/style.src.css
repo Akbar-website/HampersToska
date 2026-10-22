@@ -2075,12 +2075,6 @@ textarea:focus-visible {
   margin-bottom: 1rem;
 }
 
-/* Hide breadcrumb section */
-.breadcrumb-section,
-.breadcrumb {
-  display: none !important;
-}
-
 /* ============================================================
    ARTICLE & BLOG DETAIL STYLES
    ============================================================ */
@@ -2426,4 +2420,114 @@ textarea:focus-visible {
   color: var(--color-text-muted);
   line-height: 1.65;
   margin: 0;
+}
+
+/* ============================================================
+   BREADCRUMB (tampil di semua halaman)
+   ============================================================ */
+.breadcrumb-section {
+  padding: 0.75rem 0;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-sm);
+}
+
+.breadcrumb-item {
+  display: block;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.breadcrumb-item.active {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item a:focus-visible {
+  text-decoration: underline;
+}
+
+.breadcrumb-section+.hero-section {
+  min-height: calc(100vh - 80px - 3rem);
+}
+
+/* ============================================================
+   BACK TO TOP
+   ============================================================ */
+.back-to-top {
+  position: fixed;
+  right: 1.75rem;
+  bottom: 6rem;
+  right: max(1.75rem, env(safe-area-inset-right, 1.75rem));
+  bottom: calc(max(1.75rem, env(safe-area-inset-bottom, 0px)) + 4.25rem);
+  z-index: 1040;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition-base), transform var(--transition-base),
+    visibility var(--transition-base), background var(--transition-fast), color var(--transition-fast);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.back-to-top svg {
+  display: block;
+  pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+  .back-to-top {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media print {
+  .back-to-top {
+    display: none !important;
+  }
 }

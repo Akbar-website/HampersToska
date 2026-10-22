@@ -78,267 +78,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Gaya khusus halaman portofolio -->
-  <style>
-    .site-footer {
-      overflow-x: clip
-    }
-
-    .porto-intro {
-      max-width: 640px
-    }
-
-    .porto-note {
-      display: inline-block;
-      margin-top: 1.25rem;
-      padding: .5rem .9rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-sm);
-      background: var(--color-surface);
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      margin-bottom: 0
-    }
-
-    .porto-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
-      margin: 0 0 1.25rem;
-      padding: 0
-    }
-
-    .porto-filter {
-      appearance: none;
-      -webkit-appearance: none;
-      background: var(--color-surface);
-      border: 1.5px solid var(--color-border);
-      border-radius: var(--radius-pill);
-      padding: .5rem 1.1rem;
-      font: 600 var(--text-sm)/1.4 var(--font-body);
-      color: var(--color-text);
-      cursor: pointer;
-      transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast)
-    }
-
-    .porto-filter:hover {
-      border-color: var(--color-primary);
-      color: var(--color-primary-dark)
-    }
-
-    .porto-filter[aria-pressed="true"] {
-      background: var(--color-primary);
-      border-color: var(--color-primary);
-      color: #fff
-    }
-
-    .porto-filter:focus-visible,
-    .porto-link:focus-visible {
-      outline: 3px solid var(--color-gold);
-      outline-offset: 3px
-    }
-
-    .porto-status {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      margin: 0 0 1.5rem
-    }
-
-    .porto-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem
-    }
-
-    @media (min-width:640px) {
-      .porto-grid {
-        grid-template-columns: repeat(2, 1fr)
-      }
-    }
-
-    @media (min-width:992px) {
-      .porto-grid {
-        grid-template-columns: repeat(3, 1fr)
-      }
-
-      .porto-grid:not(.is-filtered) .porto-card--feature {
-        grid-column: span 2
-      }
-    }
-
-    .porto-card {
-      display: flex;
-      flex-direction: column;
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden
-    }
-
-    .porto-card[hidden] {
-      display: none
-    }
-
-    .porto-media {
-      position: relative;
-      aspect-ratio: 4/3;
-      background: var(--color-surface-muted);
-      overflow: hidden
-    }
-
-    .porto-media img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform var(--transition-slow)
-    }
-
-    @media (min-width:992px) {
-      .porto-grid:not(.is-filtered) .porto-card--feature .porto-media {
-        aspect-ratio: auto;
-        flex: 1;
-        min-height: 340px
-      }
-    }
-
-    @media (hover:hover) {
-      .porto-card:hover .porto-media img {
-        transform: scale(1.03)
-      }
-    }
-
-    .porto-body {
-      padding: 1.25rem 1.5rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: .5rem;
-      flex: 1
-    }
-
-    .porto-cat {
-      align-self: flex-start;
-      font-size: var(--text-xs);
-      font-weight: 600;
-      color: var(--color-primary-dark);
-      background: var(--color-primary-soft);
-      padding: .2rem .7rem;
-      border-radius: var(--radius-pill)
-    }
-
-    .porto-title {
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 0;
-      color: var(--color-text)
-    }
-
-    .porto-desc {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      margin: 0
-    }
-
-    .porto-link {
-      align-self: flex-start;
-      margin-top: .25rem;
-      font-size: var(--text-sm);
-      font-weight: 600;
-      color: var(--color-primary-dark);
-      text-decoration: underline;
-      text-underline-offset: .2em
-    }
-
-    .porto-link:hover {
-      color: var(--color-primary)
-    }
-
-    .porto-details {
-      margin-top: 4rem
-    }
-
-    .porto-details h2 {
-      font-size: var(--heading-md);
-      color: var(--color-primary-dark);
-      margin-bottom: 1.5rem
-    }
-
-    .porto-details-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem
-    }
-
-    @media (min-width:768px) {
-      .porto-details-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem
-      }
-    }
-
-    .porto-detail {
-      border-top: 2px solid var(--color-gold);
-      padding-top: 1rem
-    }
-
-    .porto-detail h3 {
-      font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: .4rem
-    }
-
-    .porto-detail p {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      margin: 0
-    }
-
-    .porto-cta {
-      margin-top: 4rem;
-      background: var(--color-primary-dark);
-      color: #fff;
-      border-radius: var(--radius-lg);
-      padding: 2.5rem 1.75rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem
-    }
-
-    @media (min-width:768px) {
-      .porto-cta {
-        padding: 3rem
-      }
-    }
-
-    .porto-cta h2 {
-      font-size: var(--heading-md);
-      color: #fff;
-      margin-bottom: .5rem
-    }
-
-    .porto-cta p {
-      color: rgba(255, 255, 255, .85);
-      max-width: 520px;
-      margin: 0
-    }
-
-    @media (prefers-reduced-motion:reduce) {
-      .porto-media img {
-        transition: none
-      }
-
-      .porto-card:hover .porto-media img {
-        transform: none
-      }
-    }
-  </style>
-
   <!-- Schema.org JSON-LD (Rich Snippets, AEO & GEO Structured Data 2026-2027) -->
   <script type="application/ld+json">
 {
@@ -538,6 +277,10 @@
   ]
 }
   </script>
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://hamperstoska.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Portofolio", "item": "https://hamperstoska.vercel.app/portofolio.html"}]}
+  </script>
 </head>
 
 <body>
@@ -593,120 +336,139 @@
 
 
   <main id="main-content">
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb-section" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Portofolio</li>
+        </ol>
+      </div>
+    </nav>
 
     <section class="page-header">
       <div class="container">
+        <p class="eyebrow">PORTOFOLIO</p>
         <h1>Hasil Pesanan Kami</h1>
+        <p>Beberapa contoh pesanan yang telah kami kerjakan. Foto dan detail ditampilkan atas izin klien.</p>
       </div>
     </section>
 
     <section class="section-pad">
       <div class="container">
 
-        <div class="porto-filters" role="group" aria-label="Filter jenis pesanan">
-          <button type="button" class="porto-filter" data-filter="all" aria-pressed="true">Semua</button>
-          <button type="button" class="porto-filter" data-filter="keluarga" aria-pressed="false">Keluarga</button>
-          <button type="button" class="porto-filter" data-filter="premium" aria-pressed="false">Premium</button>
-          <button type="button" class="porto-filter" data-filter="perusahaan" aria-pressed="false">Perusahaan</button>
-          <button type="button" class="porto-filter" data-filter="custom" aria-pressed="false">Custom</button>
-          <button type="button" class="porto-filter" data-filter="ekonomis" aria-pressed="false">Ekonomis</button>
-        </div>
-        <p class="porto-status" id="portoStatus" aria-live="polite">Menampilkan 5 dari 5 contoh pesanan</p>
-
-        <div class="porto-grid" id="portoGrid">
-          <article class="porto-card porto-card--feature" data-category="keluarga">
-            <div class="porto-media">
-              <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=800&q=75&auto=format"
-                width="1000" height="750" loading="eager" fetchpriority="high" decoding="async"
-                alt="Hampers Lebaran dalam kotak hijau toska dengan pita emas untuk pesanan keluarga besar">
+        <!-- Grid Besar -->
+        <div class="porto-grid fade-up mb-4" role="region" aria-label="Galeri portofolio hampers">
+          <figure class="porto-item" tabindex="0" aria-label="Hampers Lebaran keluarga dalam kemasan hijau toska">
+            <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=900&q=80&auto=format" width="900"
+              height="360" loading="lazy"
+              alt="Hampers Lebaran dalam kotak hijau toska dengan pita emas untuk pesanan keluarga besar">
+            <span class="porto-tag">Keluarga</span>
+            <div class="porto-overlay" aria-hidden="true">
+              <div class="porto-overlay-text">
+                <h3>Pesanan Keluarga Besar</h3>
+                <p>Hampers Lebaran untuk berbagi bersama keluarga • paket keluarga</p>
+              </div>
             </div>
-            <div class="porto-body">
-              <span class="porto-cat">Keluarga</span>
-              <h3 class="porto-title">Pesanan Keluarga Besar</h3>
-              <p class="porto-desc">Hampers Lebaran untuk berbagi bersama keluarga besar, dikemas dalam kotak hijau
-                toska.</p>
-              <a class="porto-link" href="paket-silaturahmi.html">Lihat Paket Silaturahmi</a>
+            <figcaption class="visually-hidden">Hampers Lebaran dalam kotak hijau toska untuk pesanan keluarga besar
+            </figcaption>
+          </figure>
+          <figure class="porto-item" tabindex="0" aria-label="Hampers premium untuk relasi bisnis">
+            <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&q=80&auto=format" width="600"
+              height="280" loading="lazy" alt="Hampers premium dalam kemasan mewah untuk hadiah relasi bisnis">
+            <span class="porto-tag">Premium</span>
+            <div class="porto-overlay" aria-hidden="true">
+              <div class="porto-overlay-text">
+                <h3>Pesanan Premium</h3>
+                <p>Hampers eksklusif untuk klien istimewa • paket prestige</p>
+              </div>
             </div>
-          </article>
-          <article class="porto-card" data-category="premium">
-            <div class="porto-media">
-              <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=75&auto=format"
-                width="1000" height="750" loading="lazy" decoding="async"
-                alt="Hampers premium dalam kemasan mewah untuk hadiah relasi bisnis">
+            <figcaption class="visually-hidden">Hampers premium untuk relasi bisnis</figcaption>
+          </figure>
+          <figure class="porto-item" tabindex="0" aria-label="Hampers korporat untuk karyawan perusahaan">
+            <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=600&q=80&auto=format" width="600"
+              height="280" loading="lazy" alt="Hampers korporat dalam jumlah banyak untuk karyawan perusahaan">
+            <span class="porto-tag">Perusahaan</span>
+            <div class="porto-overlay" aria-hidden="true">
+              <div class="porto-overlay-text">
+                <h3>Pesanan Korporat</h3>
+                <p>Hampers karyawan dalam jumlah besar • paket perusahaan</p>
+              </div>
             </div>
-            <div class="porto-body">
-              <span class="porto-cat">Premium</span>
-              <h3 class="porto-title">Pesanan Premium</h3>
-              <p class="porto-desc">Hampers eksklusif untuk klien dan relasi istimewa.</p>
-              <a class="porto-link" href="paket-prestige.html">Lihat Paket Prestige</a>
+            <figcaption class="visually-hidden">Hampers korporat untuk karyawan perusahaan</figcaption>
+          </figure>
+          <figure class="porto-item" tabindex="0" aria-label="Hampers custom dengan kemasan unik">
+            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80&auto=format" width="600"
+              height="280" loading="lazy" alt="Hampers custom dengan desain kemasan unik sesuai permintaan khusus">
+            <span class="porto-tag">Custom</span>
+            <div class="porto-overlay" aria-hidden="true">
+              <div class="porto-overlay-text">
+                <h3>Pesanan Custom</h3>
+                <p>Desain kemasan dan isi sesuai permintaan khusus</p>
+              </div>
             </div>
-          </article>
-          <article class="porto-card" data-category="perusahaan">
-            <div class="porto-media">
-              <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&q=75&auto=format"
-                width="1000" height="750" loading="lazy" decoding="async"
-                alt="Hampers korporat dalam jumlah banyak untuk karyawan perusahaan">
+            <figcaption class="visually-hidden">Hampers custom dengan kemasan unik</figcaption>
+          </figure>
+          <figure class="porto-item" tabindex="0" aria-label="Hampers ekonomis untuk komunitas">
+            <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80&auto=format" width="600"
+              height="280" loading="lazy" alt="Hampers ekonomis terjangkau dan rapi untuk kebutuhan komunitas">
+            <span class="porto-tag">Ekonomis</span>
+            <div class="porto-overlay" aria-hidden="true">
+              <div class="porto-overlay-text">
+                <h3>Pesanan Komunitas</h3>
+                <p>Hampers seragam terjangkau untuk instansi dan komunitas</p>
+              </div>
             </div>
-            <div class="porto-body">
-              <span class="porto-cat">Perusahaan</span>
-              <h3 class="porto-title">Pesanan Korporat</h3>
-              <p class="porto-desc">Hampers untuk karyawan perusahaan dalam jumlah besar.</p>
-              <a class="porto-link" href="paket-perusahaan.html">Lihat Paket Perusahaan</a>
-            </div>
-          </article>
-          <article class="porto-card" data-category="custom">
-            <div class="porto-media">
-              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=75&auto=format" width="1000"
-                height="750" loading="lazy" decoding="async"
-                alt="Hampers custom dengan desain kemasan unik sesuai permintaan khusus">
-            </div>
-            <div class="porto-body">
-              <span class="porto-cat">Custom</span>
-              <h3 class="porto-title">Pesanan Custom</h3>
-              <p class="porto-desc">Desain kemasan dan isi sesuai permintaan khusus.</p>
-              <a class="porto-link" href="paket-custom.html">Lihat Paket Custom</a>
-            </div>
-          </article>
-          <article class="porto-card" data-category="ekonomis">
-            <div class="porto-media">
-              <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=800&q=75&auto=format"
-                width="1000" height="750" loading="lazy" decoding="async"
-                alt="Hampers ekonomis terjangkau dan rapi untuk kebutuhan komunitas">
-            </div>
-            <div class="porto-body">
-              <span class="porto-cat">Ekonomis</span>
-              <h3 class="porto-title">Pesanan Komunitas</h3>
-              <p class="porto-desc">Hampers seragam yang terjangkau untuk instansi dan komunitas.</p>
-              <a class="porto-link" href="paket-sahabat.html">Lihat Paket Sahabat</a>
-            </div>
-          </article>
+            <figcaption class="visually-hidden">Hampers ekonomis untuk komunitas</figcaption>
+          </figure>
         </div>
 
-        <div class="porto-details">
-          <h2>Detail yang kami perhatikan di setiap pesanan</h2>
-          <div class="porto-details-grid">
-            <div class="porto-detail">
-              <h3>Kemasan rapi</h3>
-              <p>Setiap hampers dikemas dengan rapi dan diperiksa teliti sebelum dikirim.</p>
-            </div>
-            <div class="porto-detail">
-              <h3>Kartu ucapan personal</h3>
-              <p>Nama penerima dan pesan khusus bisa ditambahkan pada kartu ucapan.</p>
-            </div>
-            <div class="porto-detail">
-              <h3>Pita dan detail kemasan</h3>
-              <p>Pita dan hiasan kemasan disesuaikan dengan paket yang Anda pilih.</p>
-            </div>
+        <!-- Grid Baris 2 -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 fade-up">
+            <figure class="porto-item" style="border-radius:var(--radius-lg)">
+              <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=700&q=75&auto=format" width="700"
+                height="300" loading="lazy" alt="Detail kemasan hampers dengan pita dan kartu ucapan personal"
+                style="height:280px;object-fit:cover;border-radius:var(--radius-lg)">
+              <div class="porto-overlay" style="border-radius:var(--radius-lg)" aria-hidden="true">
+                <div class="porto-overlay-text">
+                  <h3>Detail Kemasan &amp; Kartu Ucapan</h3>
+                  <p>Personalisasi nama penerima dan pesan khusus</p>
+                </div>
+              </div>
+              <figcaption class="visually-hidden">Detail kemasan hampers dengan kartu ucapan personal</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 fade-up delay-100">
+            <figure class="porto-item" style="border-radius:var(--radius-lg)">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=700&q=75&auto=format" width="700"
+                height="300" loading="lazy" alt="Susunan hampers Lebaran dalam berbagai ukuran siap kirim"
+                style="height:280px;object-fit:cover;border-radius:var(--radius-lg)">
+              <div class="porto-overlay" style="border-radius:var(--radius-lg)" aria-hidden="true">
+                <div class="porto-overlay-text">
+                  <h3>Hampers Siap Kirim</h3>
+                  <p>Dikemas dengan rapi dan teliti sebelum pengiriman</p>
+                </div>
+              </div>
+              <figcaption class="visually-hidden">Hampers siap kirim dalam berbagai ukuran</figcaption>
+            </figure>
           </div>
         </div>
 
-        <div class="porto-cta">
-          <div>
-            <h2>Punya konsep hampers sendiri?</h2>
-            <p>Ceritakan kebutuhan dan anggaran Anda. Kami bantu wujudkan dengan kemasan yang rapi dan berkesan.</p>
-          </div>
+        <p style="font-size:var(--text-xs);color:var(--color-text-muted);text-align:center;margin-bottom:3rem">
+          Foto-foto di atas merupakan contoh ilustrasi pesanan. Foto asli dari pesanan nyata akan ditampilkan setelah
+          mendapatkan izin dari klien.
+        </p>
+
+        <!-- CTA -->
+        <div class="text-center py-5 px-4"
+          style="background:linear-gradient(135deg,var(--color-primary-soft),var(--color-gold-soft));border-radius:var(--radius-lg);border:1px solid var(--color-border)">
+          <p class="eyebrow">WUJUDKAN KONSEPMU</p>
+          <h2 style="font-size:var(--heading-md);color:var(--color-primary-dark)">Diskusikan Konsep Hampers Anda</h2>
+          <p style="color:var(--color-text-muted);max-width:480px;margin:0.75rem auto 1.75rem">Punya ide hampers yang
+            unik? Ceritakan kepada kami dan kami akan bantu mewujudkannya dengan kemasan yang berkesan.</p>
           <a href="https://wa.me/6282131087971?text=Halo%20Hampers%20Toska%2C%20saya%20ingin%20mendiskusikan%20konsep%20hampers%20custom%20untuk%20kebutuhan%20saya."
-            class="btn btn-gold" target="_blank" rel="noopener noreferrer">
+            class="btn btn-brand" target="_blank" rel="noopener noreferrer">
             Diskusikan Konsep Hampers
           </a>
         </div>
@@ -782,31 +544,16 @@
     <span class="float-wa-dot" aria-hidden="true"></span>
   </a>
 
-  <script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script>
-    (function () {
-      var grid = document.getElementById('portoGrid');
-      var status = document.getElementById('portoStatus');
-      var btns = document.querySelectorAll('.porto-filter');
-      var cards = grid ? grid.querySelectorAll('.porto-card') : [];
-      if (!grid || !btns.length) return;
-      btns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var cat = btn.getAttribute('data-filter');
-          var shown = 0;
-          btns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
-          cards.forEach(function (c) {
-            var show = cat === 'all' || c.getAttribute('data-category') === cat;
-            c.hidden = !show;
-            if (show) shown++;
-          });
-          grid.classList.toggle('is-filtered', cat !== 'all');
-          status.textContent = 'Menampilkan ' + shown + ' dari ' + cards.length + ' contoh pesanan';
-        });
-      });
-    })();
-  </script>
+  <!-- Back to top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Kembali ke atas halaman">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M6 15l6-6 6 6" />
+    </svg>
+  </button>
+
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

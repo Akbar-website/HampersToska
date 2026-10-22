@@ -69,7 +69,7 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     // Defer initial check to rAF so it never causes a forced reflow on DCL
-    requestAnimationFrame(function() {
+    requestAnimationFrame(function () {
       if ((window.scrollY || window.pageYOffset || 0) > 0) updateNavbar();
     });
   }
@@ -158,15 +158,15 @@
         return;
       }
 
-      const name      = (form.querySelector('#quoteName') || {}).value || '';
-      const company   = (form.querySelector('#quoteCompany') || {}).value || '';
-      const qty       = (form.querySelector('#quoteQty') || {}).value || '';
-      const budget    = (form.querySelector('#quoteBudget') || {}).value || '';
-      const date      = (form.querySelector('#quoteDate') || {}).value || '';
-      const city      = (form.querySelector('#quoteCity') || {}).value || '';
-      const branding  = (form.querySelector('#quoteBranding') || {}).value || '';
-      const notes     = (form.querySelector('#quoteNotes') || {}).value || '';
-      const phone     = (form.querySelector('#quotePhone') || {}).value || '';
+      const name = (form.querySelector('#quoteName') || {}).value || '';
+      const company = (form.querySelector('#quoteCompany') || {}).value || '';
+      const qty = (form.querySelector('#quoteQty') || {}).value || '';
+      const budget = (form.querySelector('#quoteBudget') || {}).value || '';
+      const date = (form.querySelector('#quoteDate') || {}).value || '';
+      const city = (form.querySelector('#quoteCity') || {}).value || '';
+      const branding = (form.querySelector('#quoteBranding') || {}).value || '';
+      const notes = (form.querySelector('#quoteNotes') || {}).value || '';
+      const phone = (form.querySelector('#quotePhone') || {}).value || '';
 
       let msg = `Halo Hampers Toska, saya ingin meminta penawaran hampers Lebaran perusahaan.\n\n`;
       msg += `Nama: ${name}\n`;
@@ -398,13 +398,13 @@
 
       const titleEl = modalEl.querySelector('#modalPkgTitle');
       const badgeEl = modalEl.querySelector('#modalPkgBadge');
-      const imgEl   = modalEl.querySelector('#modalPkgImage');
+      const imgEl = modalEl.querySelector('#modalPkgImage');
       const priceEl = modalEl.querySelector('#modalPkgPrice');
-      const descEl  = modalEl.querySelector('#modalPkgDesc');
+      const descEl = modalEl.querySelector('#modalPkgDesc');
       const itemsEl = modalEl.querySelector('#modalPkgItems');
       const specsEl = modalEl.querySelector('#modalPkgSpecs');
-      const persEl  = modalEl.querySelector('#modalPkgPersonalization');
-      const waBtn   = modalEl.querySelector('#modalPkgWaBtn');
+      const persEl = modalEl.querySelector('#modalPkgPersonalization');
+      const waBtn = modalEl.querySelector('#modalPkgWaBtn');
       const fullLnk = modalEl.querySelector('#modalPkgFullLink');
 
       if (titleEl) titleEl.textContent = pkg.title;
@@ -419,13 +419,13 @@
       if (descEl) descEl.textContent = pkg.desc;
 
       if (itemsEl) {
-        itemsEl.innerHTML = pkg.items.map(function(item) {
+        itemsEl.innerHTML = pkg.items.map(function (item) {
           return `<li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> <span>${item}</span></li>`;
         }).join('');
       }
 
       if (specsEl) {
-        specsEl.innerHTML = pkg.specs.map(function(sp) {
+        specsEl.innerHTML = pkg.specs.map(function (sp) {
           return `<div class="spec-item"><span class="spec-label">${sp.label}</span><span class="spec-value">${sp.value}</span></div>`;
         }).join('');
       }
@@ -460,7 +460,7 @@
     // Check URL hash on page load
     const hash = window.location.hash.replace('#', '').toLowerCase();
     if (hash && PACKAGES_DATA[hash]) {
-      setTimeout(function() {
+      setTimeout(function () {
         openModalForPackage(hash);
       }, 350);
     }
@@ -480,6 +480,38 @@
   }
 
   /* ============================================================
+     Back to top button
+  ============================================================ */
+  function initBackToTop() {
+    const btn = document.getElementById('backToTop');
+    if (!btn) return;
+    const SHOW_AFTER = 400;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
+
+    function update() {
+      btn.classList.toggle('is-visible', window.scrollY > SHOW_AFTER);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
+
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+      // Keep keyboard focus useful once the button hides again
+      const brand = document.querySelector('.navbar-brand');
+      if (brand) brand.focus({ preventScroll: true });
+    });
+
+    update();
+  }
+
+  /* ============================================================
      Init all
   ============================================================ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -489,10 +521,11 @@
     initActiveNav();
     initCopyrightYear();
     initSmoothAnchor();
+    initBackToTop();
 
     // Non-critical: defer one frame so main thread is free for first paint
-    requestAnimationFrame(function() {
-      setTimeout(function() {
+    requestAnimationFrame(function () {
+      setTimeout(function () {
         initFadeUp();
         initPackageFilter();
         initPackageModal();
