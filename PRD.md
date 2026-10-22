@@ -2,7 +2,7 @@
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Draft siap ditinjau  
-**Nama brand sementara:** Hampers Toska  
+**Nama brand sementara:** Hampers Lebaran  
 **Bahasa utama:** Indonesia  
 **Stack:** HTML5, Bootstrap 5, CSS murni untuk styling khusus, JavaScript vanilla seperlunya
 
@@ -129,7 +129,7 @@ Urutan bagian:
 13. **Footer** lengkap.
 
 ### 5.2 Tentang `/tentang/`
-- H1: “Tentang Hampers Toska”
+- H1: “Tentang Hampers Lebaran”
 - Cerita dan latar belakang brand (diisi dari fakta pemilik).
 - Misi, prinsip kualitas, dan cara memilih produk.
 - Foto tim/workspace/proses yang autentik jika tersedia.
@@ -231,13 +231,13 @@ Nomor tujuan: `6282131087971`
 Format URL: `https://wa.me/6282131087971?text={URL_ENCODED_MESSAGE}`
 
 Pesan default beranda:
-> Halo Hampers Toska, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
+> Halo Hampers Lebaran, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
 
 Pesan dari detail paket:
-> Halo Hampers Toska, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
+> Halo Hampers Lebaran, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
 
 Pesan perusahaan:
-> Halo Hampers Toska, saya ingin meminta penawaran hampers Lebaran perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
+> Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
 
 Persyaratan:
 - Gunakan URL-encoding yang benar untuk isi pesan.
@@ -423,7 +423,7 @@ Jangan menjadikan posisi ranking tunggal sebagai ukuran keberhasilan. Gunakan ev
 
 ## 12. Risiko dan asumsi
 - Harga, isi paket, stok, minimum order, wilayah layanan, alamat, email, kebijakan pengiriman, serta identitas legal belum diberikan.
-- Nama “Hampers Toska” hanya placeholder dan harus diganti jika brand resmi berbeda.
+- Nama “Hampers Lebaran” hanya placeholder dan harus diganti jika brand resmi berbeda.
 - Target 2026–2027 berarti praktik perlu ditinjau lagi saat peluncuran. Tidak ada teknik yang menjamin ranking, rich results, atau jawaban AI.
 - Jika kemudian diperlukan CMS, checkout, inventori, atau multi-bahasa, evaluasi sebagai fase terpisah.
 

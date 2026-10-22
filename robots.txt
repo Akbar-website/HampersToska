@@ -1,4 +1,4 @@
-# robots.txt — Hampers Toska (2026/2027 Edition)
+# robots.txt — Hampers Lebaran (2026/2027 Edition)
 # https://hamperstoska.vercel.app/robots.txt
 
 User-agent: *

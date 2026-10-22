@@ -1,9 +1,9 @@
-# Design System & UI Specification — Hampers Toska
+# Design System & UI Specification — Hampers Lebaran
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Design handoff untuk implementasi HTML + Bootstrap + CSS murni
 
-> Nama “Hampers Toska” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
+> Nama “Hampers Lebaran” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
 
 ## 1. Arah desain
 

@@ -1,5 +1,5 @@
 /**
- * Hampers Toska — main.js
+ * Hampers Lebaran — main.js
  * Vanilla JS: navbar scroll, fade-in observer, WA builder, mobile menu, filter
  */
 
@@ -19,10 +19,10 @@
 
   /* Default messages */
   const WA_MSG_DEFAULT =
-    'Halo Hampers Toska, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.';
+    'Halo Hampers Lebaran, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.';
 
   const WA_MSG_CORPORATE =
-    'Halo Hampers Toska, saya ingin meminta penawaran hampers Lebaran perusahaan. Mohon informasi harga, minimum order, dan opsi kustomisasi.';
+    'Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan. Mohon informasi harga, minimum order, dan opsi kustomisasi.';
 
   /* Set all WA links on page */
   function initWhatsAppLinks() {
@@ -168,7 +168,7 @@
       const notes = (form.querySelector('#quoteNotes') || {}).value || '';
       const phone = (form.querySelector('#quotePhone') || {}).value || '';
 
-      let msg = `Halo Hampers Toska, saya ingin meminta penawaran hampers Lebaran perusahaan.\n\n`;
+      let msg = `Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan.\n\n`;
       msg += `Nama: ${name}\n`;
       if (company) msg += `Perusahaan: ${company}\n`;
       msg += `Jumlah paket: ${qty}\n`;
@@ -239,7 +239,7 @@
         { label: 'Ketahanan', value: '3–6 Bulan (100% Halal)' }
       ],
       personalization: 'Gratis Kartu Ucapan Lebaran Custom (Nama Pengirim & Penerima) + Pita Satin Toska/Emas.',
-      waText: 'Halo Hampers Toska, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
+      waText: 'Halo Hampers Lebaran, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
       detailUrl: 'paket-silaturahmi.html'
     },
     'prestige': {
@@ -269,7 +269,7 @@
         { label: 'Ketahanan', value: '6 Bulan (Segel Kedap Udara)' }
       ],
       personalization: 'Seal Lilin Cap Toska (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
-      waText: 'Halo Hampers Toska, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
+      waText: 'Halo Hampers Lebaran, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
       detailUrl: 'paket-prestige.html'
     },
     'sahabat': {
@@ -296,7 +296,7 @@
         { label: 'Ketahanan', value: '3–4 Bulan (100% Halal)' }
       ],
       personalization: 'Kartu Ucapan Lebaran dengan nama pengirim/komunitas tercetak rapi.',
-      waText: 'Halo Hampers Toska, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
+      waText: 'Halo Hampers Lebaran, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
       detailUrl: 'paket-sahabat.html'
     },
     'korporat': {
@@ -324,7 +324,7 @@
         { label: 'Pengiriman', value: 'Multi-Alamat Kantor & Rumah Karyawan' }
       ],
       personalization: 'Penuh (Full Branding): Sablon logo pada box, pita custom nama perusahaan, kartu ucapan pesan direksi.',
-      waText: 'Halo Hampers Toska, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Hampers Korporat.',
+      waText: 'Halo Hampers Lebaran, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Hampers Korporat.',
       detailUrl: 'paket-perusahaan.html'
     },
     'barokah': {
@@ -353,7 +353,7 @@
         { label: 'Ketahanan', value: '4–6 Bulan' }
       ],
       personalization: 'Kartu Ucapan Lipat Eksklusif + Hangtag Personalisasi Nama Keluarga.',
-      waText: 'Halo Hampers Toska, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
+      waText: 'Halo Hampers Lebaran, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
       detailUrl: 'paket-barokah.html'
     },
     'custom': {
@@ -381,7 +381,7 @@
         { label: 'Konsultasi', value: 'Free Mockup & Rekomendasi Katalog' }
       ],
       personalization: '100% Kustomisasi sesuai keinginan Anda atau brand perusahaan.',
-      waText: 'Halo Hampers Toska, saya ingin merancang Paket Hampers Custom dengan anggaran dan isi tertentu. Mohon bantuannya.',
+      waText: 'Halo Hampers Lebaran, saya ingin merancang Paket Hampers Custom dengan anggaran dan isi tertentu. Mohon bantuannya.',
       detailUrl: 'paket-custom.html'
     }
   };
