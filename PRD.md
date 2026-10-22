@@ -1,8 +1,8 @@
-# PRD — Website Souvenir Kantor
+# PRD — Website Souvenir Event
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Draft siap ditinjau  
-**Nama brand sementara:** Souvenir Kantor  
+**Nama brand sementara:** Souvenir Event  
 **Bahasa utama:** Indonesia  
 **Stack:** HTML5, Bootstrap 5, CSS murni untuk styling khusus, JavaScript vanilla seperlunya
 
@@ -12,7 +12,7 @@
 
 ## 1. Ringkasan produk
 
-Website katalog dan pemasaran Souvenir Kantor yang menampilkan pilihan paket, membantu calon pembeli memahami isi dan harga paket, membangun kepercayaan, serta mengarahkan pertanyaan dan pemesanan ke WhatsApp **6282131087971**.
+Website katalog dan pemasaran Souvenir Event yang menampilkan pilihan paket, membantu calon pembeli memahami isi dan harga paket, membangun kepercayaan, serta mengarahkan pertanyaan dan pemesanan ke WhatsApp **6282131087971**.
 
 Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di ponsel, serta siap dikembangkan menjadi katalog dengan halaman produk dan artikel SEO. Tahap pertama berfokus pada katalog dan lead generation, bukan checkout atau pembayaran online.
 
@@ -20,7 +20,7 @@ Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di pon
 1. Menghasilkan pertanyaan dan prospek berkualitas melalui WhatsApp.
 2. Menampilkan paket Souvenir dengan isi, harga, opsi kustomisasi, dan ketentuan yang jelas.
 3. Menumbuhkan kepercayaan lewat portofolio nyata, proses pemesanan, FAQ, dan informasi bisnis.
-4. Mendapatkan trafik organik dari pencarian terkait Souvenir Kantor, Souvenir perusahaan, dan Souvenir custom.
+4. Mendapatkan trafik organik dari pencarian terkait Souvenir Event, Souvenir perusahaan, dan Souvenir custom.
 5. Memudahkan tim memperbarui katalog, foto, harga, stok, dan artikel.
 
 ### Bukan tujuan tahap pertama
@@ -32,7 +32,7 @@ Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di pon
 ## 2. Target pengguna
 
 ### Persona A — Pembeli keluarga
-- Mencari hadiah Kantor yang rapi, berkesan, dan sesuai anggaran.
+- Mencari hadiah Event yang rapi, berkesan, dan sesuai anggaran.
 - Perlu melihat isi paket, harga, foto asli, dan opsi pengiriman.
 - CTA utama: “Tanya paket via WhatsApp”.
 
@@ -48,7 +48,7 @@ Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di pon
 
 ## 3. Proposisi nilai dan pesan
 
-**Pesan utama:** “Souvenir Kantor yang berkesan, dikemas dengan perhatian pada setiap detail.”
+**Pesan utama:** “Souvenir Event yang berkesan, dikemas dengan perhatian pada setiap detail.”
 
 Pesan pendukung (gunakan hanya jika sesuai operasional sebenarnya):
 - Pilihan paket untuk keluarga, relasi, dan kebutuhan perusahaan.
@@ -99,7 +99,7 @@ Halaman pendukung yang direkomendasikan:
 ### 5.1 Beranda `/`
 Urutan bagian:
 1. **Hero**
-   - H1 spesifik: “Souvenir Kantor untuk Keluarga, Klien, dan Karyawan”
+   - H1 spesifik: “Souvenir Event untuk Keluarga, Klien, dan Karyawan”
    - Subheadline yang menjelaskan manfaat dan target pelanggan.
    - CTA primer: “Lihat Paket Souvenir”
    - CTA sekunder: “Konsultasi via WhatsApp”
@@ -129,7 +129,7 @@ Urutan bagian:
 13. **Footer** lengkap.
 
 ### 5.2 Tentang `/tentang/`
-- H1: “Tentang Souvenir Kantor”
+- H1: “Tentang Souvenir Event”
 - Cerita dan latar belakang brand (diisi dari fakta pemilik).
 - Misi, prinsip kualitas, dan cara memilih produk.
 - Foto tim/workspace/proses yang autentik jika tersedia.
@@ -162,7 +162,7 @@ Wajib menampilkan:
 - Product/Offer structured data hanya bila sesuai fakta dan pedoman platform.
 
 ### 5.5 Kategori Souvenir perusahaan `/paket/perusahaan/`
-- H1: “Souvenir Kantor Perusahaan untuk Karyawan dan Relasi Bisnis”
+- H1: “Souvenir Event Perusahaan untuk Karyawan dan Relasi Bisnis”
 - Kebutuhan yang dilayani: karyawan, klien, vendor, mitra, pimpinan.
 - Opsi personalisasi dan branding yang benar-benar tersedia.
 - Form permintaan penawaran (opsional; jika ada, minimalkan data).
@@ -231,13 +231,13 @@ Nomor tujuan: `6282131087971`
 Format URL: `https://wa.me/6282131087971?text={URL_ENCODED_MESSAGE}`
 
 Pesan default beranda:
-> Halo Souvenir Kantor, saya ingin konsultasi Souvenir Kantor. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
+> Halo Souvenir Event, saya ingin konsultasi Souvenir Event. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
 
 Pesan dari detail paket:
-> Halo Souvenir Kantor, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
+> Halo Souvenir Event, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
 
 Pesan perusahaan:
-> Halo Souvenir Kantor, saya ingin meminta penawaran Souvenir Kantor perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
+> Halo Souvenir Event, saya ingin meminta penawaran Souvenir Event perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
 
 Persyaratan:
 - Gunakan URL-encoding yang benar untuk isi pesan.
@@ -337,20 +337,20 @@ Gunakan JSON-LD, valid, dan sinkron dengan konten yang terlihat:
 
 ### 7.8 Keyword & rencana konten
 Keyword adalah hipotesis awal, bukan janji volume pencarian:
-- Souvenir Kantor
-- Souvenir Kantor premium
-- Souvenir Kantor perusahaan
+- Souvenir Event
+- Souvenir Event premium
+- Souvenir Event perusahaan
 - Souvenir untuk karyawan
 - Souvenir untuk klien
-- Souvenir Kantor custom
-- paket Souvenir Kantor
-- Souvenir Kantor sesuai budget
+- Souvenir Event custom
+- paket Souvenir Event
+- Souvenir Event sesuai budget
 - ide Souvenir untuk relasi bisnis
-- cara memilih Souvenir Kantor perusahaan
+- cara memilih Souvenir Event perusahaan
 
 Pemetaan:
-- Beranda: Souvenir Kantor + brand/value proposition.
-- Kategori perusahaan: Souvenir Kantor perusahaan, Souvenir karyawan/klien.
+- Beranda: Souvenir Event + brand/value proposition.
+- Kategori perusahaan: Souvenir Event perusahaan, Souvenir karyawan/klien.
 - Kategori premium/ekonomis: intent sesuai kategori dan harga aktual.
 - Detail paket: nama paket + karakteristik yang benar.
 - Blog: pertanyaan informasional dan panduan pembelian; hindari menargetkan keyword sama secara identik pada banyak halaman.
@@ -423,7 +423,7 @@ Jangan menjadikan posisi ranking tunggal sebagai ukuran keberhasilan. Gunakan ev
 
 ## 12. Risiko dan asumsi
 - Harga, isi paket, stok, minimum order, wilayah layanan, alamat, email, kebijakan pengiriman, serta identitas legal belum diberikan.
-- Nama “Souvenir Kantor” hanya placeholder dan harus diganti jika brand resmi berbeda.
+- Nama “Souvenir Event” hanya placeholder dan harus diganti jika brand resmi berbeda.
 - Target 2026–2027 berarti praktik perlu ditinjau lagi saat peluncuran. Tidak ada teknik yang menjamin ranking, rich results, atau jawaban AI.
 - Jika kemudian diperlukan CMS, checkout, inventori, atau multi-bahasa, evaluasi sebagai fase terpisah.
 

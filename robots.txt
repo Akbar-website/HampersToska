@@ -1,5 +1,5 @@
-# robots.txt — Souvenir Kantor (2026/2027 Edition)
-# https://SouvenirKantor.vercel.app/robots.txt
+# robots.txt — Souvenir Event (2026/2027 Edition)
+# https://SouvenirEvent.vercel.app/robots.txt
 
 User-agent: *
 Allow: /
@@ -29,4 +29,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://SouvenirKantor.vercel.app/sitemap.xml
+Sitemap: https://SouvenirEvent.vercel.app/sitemap.xml

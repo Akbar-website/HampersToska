@@ -1,13 +1,13 @@
-# Design System & UI Specification — Souvenir Kantor
+# Design System & UI Specification — Souvenir Event
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Design handoff untuk implementasi HTML + Bootstrap + CSS murni
 
-> Nama “Souvenir Kantor” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
+> Nama “Souvenir Event” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
 
 ## 1. Arah desain
 
-**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau Kantor yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
+**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau Event yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
 
 **Karakter visual**
 - Premium: whitespace luas, foto produk besar, grid rapi.
@@ -139,9 +139,9 @@ Jaga ukuran body setidaknya sekitar 16px pada perangkat mobile. Heading besar bo
 **Desktop layout:** dua kolom. Copy di kiri, foto Souvenir utama di kanan. Di mobile, copy di atas dan foto sesudahnya.
 
 Contoh copy:
-- Eyebrow: `Souvenir Kantor 2027`
+- Eyebrow: `Souvenir Event 2027`
 - H1: **“Berbagi Hangat, Mengirimkan Makna.”**
-- Supporting text: “Temukan Souvenir Kantor untuk keluarga, sahabat, karyawan, dan relasi bisnis. Pilih paket yang sesuai kebutuhan atau konsultasikan Souvenir custom bersama tim kami.”
+- Supporting text: “Temukan Souvenir Event untuk keluarga, sahabat, karyawan, dan relasi bisnis. Pilih paket yang sesuai kebutuhan atau konsultasikan Souvenir custom bersama tim kami.”
 - CTA primary: “Lihat Paket Souvenir”
 - CTA secondary: “Konsultasi via WhatsApp”
 - Microcopy: “Isi paket, harga, dan jadwal dikonfirmasi sebelum pesanan diproses.” (gunakan hanya jika sesuai proses aktual)
@@ -179,7 +179,7 @@ Contoh markup Bootstrap:
       width="800"
       height="600"
       loading="lazy"
-      alt="Souvenir Kantor dalam kotak hijau dengan pilihan produk di dalamnya"
+      alt="Souvenir Event dalam kotak hijau dengan pilihan produk di dalamnya"
     >
   </a>
   <div class="card-body d-flex flex-column">
@@ -291,7 +291,7 @@ CTA primer menggunakan kalimat tindakan. Jangan memakai “Klik di sini”. Past
 
 Contoh URL:
 ```text
-https://wa.me/6282131087971?text=Halo%20Souvenir%20Kantor%2C%20saya%20ingin%20konsultasi%20Souvenir%20Kantor.
+https://wa.me/6282131087971?text=Halo%20Souvenir%20Event%2C%20saya%20ingin%20konsultasi%20Souvenir%20Event.
 ```
 
 Contoh helper JavaScript vanilla:
