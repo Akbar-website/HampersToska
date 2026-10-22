@@ -222,8 +222,8 @@
       price: 'Rp 385.000 – Rp 450.000',
       priceNote: 'Harga final dikonfirmasi sesuai opsi toples & isi saat konsultasi',
       image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=80&auto=format',
-      imageAlt: 'Paket Silaturahmi — hampers Lebaran keluarga dalam kotak toska eksklusif',
-      desc: 'Pilihan terfavorit untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Kombinasi manis, gurih, dan segar dalam kemasan hardbox hijau toska beraksen pita emas mewah.',
+      imageAlt: 'Paket Silaturahmi — hampers Lebaran keluarga dalam kotak Lebaran eksklusif',
+      desc: 'Pilihan terfavorit untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Kombinasi manis, gurih, dan segar dalam kemasan hardbox hijau Lebaran beraksen pita emas mewah.',
       items: [
         'Kurma Sukari Al-Qassim Premium (Toples Segi-6 Kedap Udara 250g)',
         'Kastengel Keju Edam Asli Wijsman (Toples Kaca Silinder 300g)',
@@ -233,12 +233,12 @@
         'Bonus Tasbih Kayu Cendana & Pocket Sajadah Travel Praktis'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Exclusive Hardbox Toska Embossed Foil' },
+        { label: 'Kemasan', value: 'Exclusive Hardbox Lebaran Embossed Foil' },
         { label: 'Min. Order', value: '1 Paket (Bisa Satuan)' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
         { label: 'Ketahanan', value: '3–6 Bulan (100% Halal)' }
       ],
-      personalization: 'Gratis Kartu Ucapan Lebaran Custom (Nama Pengirim & Penerima) + Pita Satin Toska/Emas.',
+      personalization: 'Gratis Kartu Ucapan Lebaran Custom (Nama Pengirim & Penerima) + Pita Satin Lebaran/Emas.',
       waText: 'Halo Hampers Lebaran, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
       detailUrl: 'paket-silaturahmi.html'
     },
@@ -263,12 +263,12 @@
         'Sajadah Tenun Halus Sutra Turkey Motif Kaligrafi Eksklusif'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Luxury Two-Tier Hardbox Beludru Toska' },
+        { label: 'Kemasan', value: 'Luxury Two-Tier Hardbox Beludru Lebaran' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
         { label: 'Ketahanan', value: '6 Bulan (Segel Kedap Udara)' }
       ],
-      personalization: 'Seal Lilin Cap Toska (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
+      personalization: 'Seal Lilin Cap Lebaran (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
       waText: 'Halo Hampers Lebaran, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
       detailUrl: 'paket-prestige.html'
     },
@@ -287,10 +287,10 @@
         'Sagu Keju Renyah Gurih Lumer di Lidah (Toples Tabung Segel 250g)',
         'Choco Almond Butter Cookies Manis Renyah (Toples Tabung Segel 250g)',
         'Sirup Jeruk Markisa Asli Segar Alami (Botol Kaca 350ml)',
-        'Kartu Ucapan Lebaran Hangtag Eid Mubarak & Pita Satin Toska'
+        'Kartu Ucapan Lebaran Hangtag Eid Mubarak & Pita Satin Lebaran'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Corrugated Box Toska Tebal + Sablon Emas' },
+        { label: 'Kemasan', value: 'Corrugated Box Lebaran Tebal + Sablon Emas' },
         { label: 'Min. Order', value: '3 Paket' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
         { label: 'Ketahanan', value: '3–4 Bulan (100% Halal)' }
@@ -347,7 +347,7 @@
         'Reed Diffuser Aroma Jasmine Ramadhan + 5 Stick Rotan (Botol Elegan 50ml)'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Rigid Hardbox Magnetik Toska + Pita Emas' },
+        { label: 'Kemasan', value: 'Rigid Hardbox Magnetik Lebaran + Pita Emas' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
         { label: 'Ketahanan', value: '4–6 Bulan' }

@@ -7,7 +7,7 @@
 
 ## 1. Arah desain
 
-**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau toska yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
+**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau Lebaran yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
 
 **Karakter visual**
 - Premium: whitespace luas, foto produk besar, grid rapi.
@@ -291,7 +291,7 @@ CTA primer menggunakan kalimat tindakan. Jangan memakai “Klik di sini”. Past
 
 Contoh URL:
 ```text
-https://wa.me/6282131087971?text=Halo%20Hampers%20Toska%2C%20saya%20ingin%20konsultasi%20hampers%20Lebaran.
+https://wa.me/6282131087971?text=Halo%20Hampers%20Lebaran%2C%20saya%20ingin%20konsultasi%20hampers%20Lebaran.
 ```
 
 Contoh helper JavaScript vanilla:
