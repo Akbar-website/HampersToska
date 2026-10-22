@@ -220,25 +220,23 @@
       category: 'Souvenir Keluarga',
       badgeIcon: '🏡',
       price: 'Rp 385.000 – Rp 450.000',
-      priceNote: 'Harga final dikonfirmasi sesuai opsi toples & isi saat konsultasi',
+      priceNote: 'Harga final dikonfirmasi sesuai pilihan isi & jumlah pesanan saat konsultasi',
       image: 'assets/img/set-pouch-tumbler-dompet-640.webp',
       imageAlt: 'Gift set hardbox hitam berisi pouch organizer, tumbler mini, dan dompet kulit',
-      desc: 'Pilihan terfavorit untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Kombinasi manis, gurih, dan segar dalam kemasan hardbox hijau Event beraksen pita emas mewah.',
+      desc: 'Gift set eksklusif untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Berisi pouch organizer, tumbler mini tutup kayu, dan dompet kulit hitam yang tertata rapi dalam hardbox hitam premium.',
       items: [
-        'Kurma Sukari Al-Qassim Premium (Toples Segi-6 Kedap Udara 250g)',
-        'Kastengel Keju Edam Asli Wijsman (Toples Kaca Silinder 300g)',
-        'Nastar Klasik Selai Nanas Segar Home-made (Toples Kaca Silinder 300g)',
-        'Sparkling White Grape / Apel Halal Sparkling (Botol Kaca Mewah 750ml)',
-        'Teh Melati Artisan Organik (Kemasan Kaleng Tin Can 50g)',
-        'Bonus Tasbih Kayu Cendana & Pocket Sajadah Travel Praktis'
+        'Pouch Organizer Hitam (kain bertekstur, resleting, strip aksen)',
+        'Tumbler Mini Hitam Tutup Kayu (finishing doff, dengan pegangan)',
+        'Dompet Kulit Hitam (model lipat, plakat logam kecil)',
+        'Hardbox Hitam Premium dengan busa insert dan tutup terpisah'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Exclusive Hardbox Event Embossed Foil' },
+        { label: 'Kemasan', value: 'Rigid Hardbox Hitam dengan Busa Insert' },
         { label: 'Min. Order', value: '1 Paket (Bisa Satuan)' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
-        { label: 'Ketahanan', value: '3–6 Bulan (100% Halal)' }
+        { label: 'Isi Paket', value: '3 Item + Hardbox' }
       ],
-      personalization: 'Gratis Kartu Ucapan Event Custom (Nama Pengirim & Penerima) + Pita Satin Event/Emas.',
+      personalization: 'Gratis Kartu Ucapan Custom (Nama Pengirim & Penerima). Tanyakan juga opsi penambahan logo atau nama pada produk.',
       waText: 'Halo Souvenir Event, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
       detailUrl: 'paket-silaturahmi.html'
     },
@@ -251,24 +249,21 @@
       priceNote: 'Pilihan tier luxury gift untuk relasi penting & VIP',
       image: 'assets/img/set-botol-jam-diffuser-640.webp',
       imageAlt: 'Premium gift set dalam hardbox hitam berisi botol minum, earbuds, diffuser kayu, dan jam digital',
-      desc: 'Pengalaman gifting tingkat tinggi berkelas eksklusif. Dirancang khusus untuk memukau relasi bisnis penting, mitra strategis, serta keluarga terhormat dengan kurma Medjool jumbo pilihan dan kue kering premium berkeju tua Belanda.',
+      desc: 'Pengalaman gifting tingkat tinggi berkelas eksklusif. Dirancang khusus untuk memukau relasi bisnis penting, mitra strategis, serta keluarga terhormat dengan kombinasi botol minum, earbuds nirkabel, diffuser kayu, dan jam digital dalam hardbox hitam premium.',
       items: [
-        'Kurma Medjool California Jumbo Grade A (Jar Kaca Segel Kedap Udara 400g)',
-        'Nastar Nanas Organik French Butter Premium (Jar Kaca 350g)',
-        'Kastengel Aged Gouda Cheese Premium Belanda (Jar Kaca 350g)',
-        'Putri Salju Mede Mentega Wijsman Lumer (Jar Kaca 350g)',
-        'Madu Hutan Murni Raw Honey Organik + Wooden Dipper Sendok Madu (Jar 250ml)',
-        'Set 2 Pcs Cangkir Keramik Stoneware Handmade & Saucer Kayu Jati Asli',
-        'Artisan Tisane Floral Herbal Tea Blend (Tin Can Gold 60g)',
-        'Sajadah Tenun Halus Sutra Turkey Motif Kaligrafi Eksklusif'
+        'Botol Minum Hitam Doff dengan Tali Gantung (stainless, finishing matte)',
+        'Earbuds Nirkabel dengan Charging Case (warna gelap, ringkas dan praktis)',
+        'Aroma Diffuser Kayu Bentuk Tetesan (motif serat kayu, cocok untuk meja kerja)',
+        'Jam Digital Meja dengan Tampilan Suhu, Kelembapan & Tanggal',
+        'Hardbox Hitam Premium dengan Busa Insert dan Tutup bertuliskan "Premium Gift Set"'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Luxury Two-Tier Hardbox Beludru Event' },
+        { label: 'Kemasan', value: 'Premium Hardbox Hitam dengan Busa Insert' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
-        { label: 'Ketahanan', value: '6 Bulan (Segel Kedap Udara)' }
+        { label: 'Isi Paket', value: '4 Item + Hardbox' }
       ],
-      personalization: 'Seal Lilin Cap Event (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
+      personalization: 'Kartu ucapan eksklusif dengan nama pengirim & penerima. Tanyakan opsi cetak atau grafir logo/nama pada produk dan tutup box.',
       waText: 'Halo Souvenir Event, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
       detailUrl: 'paket-prestige.html'
     },
@@ -281,21 +276,20 @@
       priceNote: 'Sangat terjangkau untuk berbagi dalam jumlah banyak',
       image: 'assets/img/set-notebook-pen-earbuds-640.webp',
       imageAlt: 'Gift set hardbox hitam berisi notebook, pulpen, dan earbuds',
-      desc: 'Berbagi kebahagiaan Hari Raya tidak harus mahal. Paket Sahabat dirancang dengan komposisi seimbang, kemasan kokoh estetik, dan rasa kue yang lezat untuk berbagi berkah Event kepada banyak orang sekaligus.',
+      desc: 'Berbagi apresiasi tidak harus mahal. Paket Sahabat berisi notebook, pulpen, dan earbuds nirkabel dalam hardbox hitam yang kokoh dan estetik. Praktis dipakai sehari-hari dan cocok dibagikan kepada banyak orang sekaligus.',
       items: [
-        'Kurma Khalas Manis Lembut Al-Qassim (Box Cantik 250g)',
-        'Sagu Keju Renyah Gurih Lumer di Lidah (Toples Tabung Segel 250g)',
-        'Choco Almond Butter Cookies Manis Renyah (Toples Tabung Segel 250g)',
-        'Sirup Jeruk Markisa Asli Segar Alami (Botol Kaca 350ml)',
-        'Kartu Ucapan Event Hangtag Eid Mubarak & Pita Satin Event'
+        'Notebook Hitam Cover Tekstur dengan Tali Elastis Penutup',
+        'Pulpen Hitam dengan Klip Logam (tinta lancar, nyaman digenggam)',
+        'Earbuds Nirkabel Hitam dengan Charging Case',
+        'Hardbox Hitam dengan Busa Insert dan Tutup Terpisah'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Corrugated Box Event Tebal + Sablon Emas' },
+        { label: 'Kemasan', value: 'Rigid Hardbox Hitam dengan Busa Insert' },
         { label: 'Min. Order', value: '3 Paket' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
-        { label: 'Ketahanan', value: '3–4 Bulan (100% Halal)' }
+        { label: 'Isi Paket', value: '3 Item + Hardbox' }
       ],
-      personalization: 'Kartu Ucapan Event dengan nama pengirim/komunitas tercetak rapi.',
+      personalization: 'Kartu ucapan dengan nama pengirim/komunitas tercetak rapi. Tanyakan opsi cetak logo atau nama pada notebook dan pulpen.',
       waText: 'Halo Souvenir Event, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
       detailUrl: 'paket-sahabat.html'
     },
@@ -308,22 +302,22 @@
       priceNote: 'Harga berjenjang sesuai tier anggaran & jumlah pesanan perusahaan',
       image: 'assets/img/set-powerbank-notebook-botol-640.webp',
       imageAlt: 'Premium gift set berisi tumbler, jam, notebook, dan powerbank dalam hardbox hitam',
-      desc: 'Solusi lengkap bagi divisi HR, GA, dan Procurement perusahaan. Dilengkapi fasilitas custom branding logo perusahaan pada pita, boks, kartu ucapan, dan merchandise pendukung, serta sistem pengiriman multi-alamat.',
+      desc: 'Solusi lengkap bagi divisi HR, GA, dan Procurement perusahaan. Berisi tumbler, jam tangan, notebook, dan powerbank dalam hardbox hitam premium. Tersedia custom branding logo perusahaan pada box, kartu ucapan, dan produk, serta sistem pengiriman multi-alamat.',
       items: [
-        'Pilihan Kombinasi Cookies Premium (Nastar, Kastengel, Putri Salju)',
-        'Kurma Premium Import / Madu Organik Sehat',
-        'Merchandise Branded: Tumbler Stainless Grafir Logo Perusahaan (Tahan Panas/Dingin 12 Jam)',
-        'Buku Agenda Eksklusif & Pena Metal Elegan',
-        'Sajadah Travel Waterproof dengan Sablon/Bordir Logo Perusahaan',
+        'Tumbler Hitam-Abu Doff (cocok untuk grafir atau sablon logo perusahaan)',
+        'Jam Tangan Hitam dengan Strap (tampilan minimalis dan elegan)',
+        'Notebook Hitam Cover Tekstur dengan Tali Elastis Penutup',
+        'Powerbank dengan Layar Digital Indikator Baterai',
+        'Hardbox Hitam Premium dengan Busa Insert dan Tutup Terpisah',
         'Dokumen Invoice Resmi Perusahaan (Faktur Pajak & Kwitansi)'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Hardbox Custom Logo & Warna Brand Perusahaan' },
+        { label: 'Kemasan', value: 'Hardbox Hitam Custom Logo dengan Busa Insert' },
         { label: 'Min. Order', value: '10 Paket' },
         { label: 'Waktu Produksi', value: '5–10 Hari Kerja' },
-        { label: 'Pengiriman', value: 'Multi-Alamat Event & Rumah Karyawan' }
+        { label: 'Pengiriman', value: 'Multi-Alamat (Kantor & Rumah Karyawan)' }
       ],
-      personalization: 'Penuh (Full Branding): Sablon logo pada box, pita custom nama perusahaan, kartu ucapan pesan direksi.',
+      personalization: 'Full Branding: logo perusahaan pada tutup box dan produk (sablon/grafir), kartu ucapan pesan direksi.',
       waText: 'Halo Souvenir Event, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Souvenir Korporat.',
       detailUrl: 'paket-perusahaan.html'
     },
@@ -335,24 +329,22 @@
       price: 'Rp 520.000 – Rp 620.000',
       priceNote: 'Paket komplit untuk momen kumpul hari raya keluarga besar',
       image: 'assets/img/set-jam-tumbler-pen-640.webp',
-      imageAlt: 'Premium gift set berisi jam digital, tumbler, pulpen, dan gadget dalam hardbox hitam',
-      desc: 'Paket keluarga dengan keanekaragaman isi yang lebih melimpah. Menghadirkan kurma Ajwa Madinah pilihan nabi, aneka kue kering klasik kesukaan keluarga, kopi arabika drip, serta wewangian reed diffuser bernuansa Idul Fitri.',
+      imageAlt: 'Premium gift set berisi jam digital, jam tangan, pulpen, dan tumbler dalam hardbox hitam',
+      desc: 'Paket keluarga dengan isi yang lebih lengkap dan berkelas. Berisi jam digital meja, jam tangan, pulpen, dan tumbler dalam hardbox hitam premium. Cocok untuk orang tua, mertua, maupun keluarga besar yang dihormati.',
       items: [
-        'Kurma Ajwa Madinah Al-Munawwarah Asli (Box Akrilik Gold 250g)',
-        'Nastar Nanas Butter Wijsman (Toples Kaca Silinder 300g)',
-        'Kaasstengels Edam Cheese Renyah (Toples Kaca Silinder 300g)',
-        'Lidah Kucing Special Crispy Vanilla (Toples Kaca 250g)',
-        'Kopi Arabika Gayo Single Origin Drip Bag (Box isi 5 Sachet Praktis)',
-        'Sirup Rosella Madu Herbal Alami Segar Sehat (Botol Kaca 500ml)',
-        'Reed Diffuser Aroma Jasmine Ramadhan + 5 Stick Rotan (Botol Elegan 50ml)'
+        'Jam Digital Meja dengan Tampilan Waktu, Tanggal, Kelembapan & Suhu',
+        'Jam Tangan Hitam dengan Strap (tampilan minimalis dan elegan)',
+        'Pulpen Hitam dengan Klip Logam (nyaman digenggam)',
+        'Tumbler Hitam Doff dengan Tutup dan Rim Stainless',
+        'Hardbox Hitam Premium dengan Busa Insert dan Tutup Terpisah'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Rigid Hardbox Magnetik Event + Pita Emas' },
+        { label: 'Kemasan', value: 'Rigid Hardbox Hitam dengan Busa Insert' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
-        { label: 'Ketahanan', value: '4–6 Bulan' }
+        { label: 'Isi Paket', value: '4 Item + Hardbox' }
       ],
-      personalization: 'Kartu Ucapan Lipat Eksklusif + Hangtag Personalisasi Nama Keluarga.',
+      personalization: 'Kartu Ucapan Eksklusif dengan Nama Keluarga/Pengirim. Tanyakan opsi grafir atau cetak nama pada tumbler dan pulpen.',
       waText: 'Halo Souvenir Event, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
       detailUrl: 'paket-barokah.html'
     },
@@ -365,17 +357,16 @@
       priceNote: 'Konsultasi gratis tanpa biaya komitmen awal',
       image: 'assets/img/set-botol-notebook-kartu-640.webp',
       imageAlt: 'Gift set hardbox hitam berisi botol minum, pulpen, notebook, dan card holder',
-      desc: 'Fleksibilitas tanpa batas! Kamu bebas menentukan setiap komponen Souvenir: memilih isi kue kesukaan, ukuran toples, jenis kurma, botol minuman, merchandise keramik/tekstil, hingga dimensi dan warna boks kemasan.',
+      desc: 'Fleksibilitas tanpa batas! Kamu bebas menentukan setiap komponen souvenir: memilih jenis produk, jumlah item, branding logo atau nama, hingga dimensi dan warna box kemasan. Contoh kombinasi: botol minum, pulpen, notebook, dan card holder dalam hardbox hitam.',
       items: [
-        'Pilihan Bebas 20+ Macam Kue Kering Tradisional & Modern',
-        'Pilihan Kurma (Sukari, Medjool, Ajwa, Khalas)',
-        'Pilihan Minuman Herbal, Kopi Drip, Teh Artisan, atau Sparkling Jus',
-        'Pilihan Souvenir: Reed Diffuser, Lilin Aromaterapi, Cangkir Keramik, Sajadah',
-        'Pilihan Kotak: Hardbox Magnetik, Besek Anyaman Bambu Tradisional, Rattan Basket, atau Acrylic Box',
-        'Bebas Desain Tema Kartu Ucapan & Warna Pita'
+        'Pilihan Produk: Botol Minum / Tumbler, Notebook, Pulpen, Card Holder, Dompet, Pouch, Powerbank, Earbuds, Jam, Diffuser',
+        'Pilihan Warna dan Finishing Produk Sesuai Selera atau Warna Brand',
+        'Opsi Branding: Sablon, Grafir, atau Emboss Logo / Nama pada Produk dan Box',
+        'Pilihan Kotak: Rigid Hardbox dengan Busa Insert, Box Magnetik, atau Ukuran Khusus',
+        'Bebas Desain Tema Kartu Ucapan'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Custom Sesuai Selera (Hardbox, Akrilik, Rotan)' },
+        { label: 'Kemasan', value: 'Custom Sesuai Selera (Hardbox, Busa Insert, Ukuran Khusus)' },
         { label: 'Min. Order', value: 'Fleksibel (Mulai dari 1 Paket)' },
         { label: 'Waktu Produksi', value: '3–7 Hari (Tergantung Kerumitan)' },
         { label: 'Konsultasi', value: 'Free Mockup & Rekomendasi Katalog' }
