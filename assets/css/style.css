@@ -2402,3 +2402,6 @@ textarea:focus-visible {
         display: none !important
     }
 }
+
+/* Foto set ROBOT: geser area potong ke kiri agar kotak terbuka tidak terpotong */
+img[src*="set-powerbank-notebook-botol"]{object-position:20% 50%}
