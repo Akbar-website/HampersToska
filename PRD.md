@@ -1,8 +1,8 @@
-# PRD — Website Hampers Lebaran
+# PRD — Website Souvenir Kantor
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Draft siap ditinjau  
-**Nama brand sementara:** Hampers Lebaran  
+**Nama brand sementara:** Souvenir Kantor  
 **Bahasa utama:** Indonesia  
 **Stack:** HTML5, Bootstrap 5, CSS murni untuk styling khusus, JavaScript vanilla seperlunya
 
@@ -12,15 +12,15 @@
 
 ## 1. Ringkasan produk
 
-Website katalog dan pemasaran hampers Lebaran yang menampilkan pilihan paket, membantu calon pembeli memahami isi dan harga paket, membangun kepercayaan, serta mengarahkan pertanyaan dan pemesanan ke WhatsApp **6282131087971**.
+Website katalog dan pemasaran Souvenir Kantor yang menampilkan pilihan paket, membantu calon pembeli memahami isi dan harga paket, membangun kepercayaan, serta mengarahkan pertanyaan dan pemesanan ke WhatsApp **6282131087971**.
 
 Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di ponsel, serta siap dikembangkan menjadi katalog dengan halaman produk dan artikel SEO. Tahap pertama berfokus pada katalog dan lead generation, bukan checkout atau pembayaran online.
 
 ### Tujuan bisnis
 1. Menghasilkan pertanyaan dan prospek berkualitas melalui WhatsApp.
-2. Menampilkan paket hampers dengan isi, harga, opsi kustomisasi, dan ketentuan yang jelas.
+2. Menampilkan paket Souvenir dengan isi, harga, opsi kustomisasi, dan ketentuan yang jelas.
 3. Menumbuhkan kepercayaan lewat portofolio nyata, proses pemesanan, FAQ, dan informasi bisnis.
-4. Mendapatkan trafik organik dari pencarian terkait hampers Lebaran, hampers perusahaan, dan hampers custom.
+4. Mendapatkan trafik organik dari pencarian terkait Souvenir Kantor, Souvenir perusahaan, dan Souvenir custom.
 5. Memudahkan tim memperbarui katalog, foto, harga, stok, dan artikel.
 
 ### Bukan tujuan tahap pertama
@@ -32,14 +32,14 @@ Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di pon
 ## 2. Target pengguna
 
 ### Persona A — Pembeli keluarga
-- Mencari hadiah Lebaran yang rapi, berkesan, dan sesuai anggaran.
+- Mencari hadiah Kantor yang rapi, berkesan, dan sesuai anggaran.
 - Perlu melihat isi paket, harga, foto asli, dan opsi pengiriman.
 - CTA utama: “Tanya paket via WhatsApp”.
 
 ### Persona B — HR/GA/Procurement perusahaan
-- Membutuhkan hampers karyawan, klien, mitra, atau pimpinan.
+- Membutuhkan Souvenir karyawan, klien, mitra, atau pimpinan.
 - Memerlukan harga berdasarkan kuantitas, branding kartu/logo, invoice, tenggat produksi, dan pengiriman massal.
-- CTA utama: “Konsultasi hampers perusahaan”.
+- CTA utama: “Konsultasi Souvenir perusahaan”.
 
 ### Persona C — Panitia/instansi/komunitas
 - Membutuhkan paket seragam dengan jumlah dan deadline tertentu.
@@ -48,7 +48,7 @@ Website harus terasa premium, hangat, terpercaya, ringan, mudah digunakan di pon
 
 ## 3. Proposisi nilai dan pesan
 
-**Pesan utama:** “Hampers Lebaran yang berkesan, dikemas dengan perhatian pada setiap detail.”
+**Pesan utama:** “Souvenir Kantor yang berkesan, dikemas dengan perhatian pada setiap detail.”
 
 Pesan pendukung (gunakan hanya jika sesuai operasional sebenarnya):
 - Pilihan paket untuk keluarga, relasi, dan kebutuhan perusahaan.
@@ -65,11 +65,11 @@ Navbar desktop:
 2. **Tentang** → `/tentang/`
 3. **Paket** (dropdown)
    - Semua Paket → `/paket/`
-   - Hampers Keluarga → `/paket/keluarga/`
-   - Hampers Premium → `/paket/premium/`
-   - Hampers Ekonomis → `/paket/ekonomis/`
-   - Hampers Perusahaan → `/paket/perusahaan/`
-   - Hampers Custom → `/paket/custom/`
+   - Souvenir Keluarga → `/paket/keluarga/`
+   - Souvenir Premium → `/paket/premium/`
+   - Souvenir Ekonomis → `/paket/ekonomis/`
+   - Souvenir Perusahaan → `/paket/perusahaan/`
+   - Souvenir Custom → `/paket/custom/`
 4. **Portofolio** → `/portofolio/`
 5. **Blog** → `/blog/`
 6. CTA navbar: **Konsultasi WhatsApp**
@@ -99,9 +99,9 @@ Halaman pendukung yang direkomendasikan:
 ### 5.1 Beranda `/`
 Urutan bagian:
 1. **Hero**
-   - H1 spesifik: “Hampers Lebaran untuk Keluarga, Klien, dan Karyawan”
+   - H1 spesifik: “Souvenir Kantor untuk Keluarga, Klien, dan Karyawan”
    - Subheadline yang menjelaskan manfaat dan target pelanggan.
-   - CTA primer: “Lihat Paket Hampers”
+   - CTA primer: “Lihat Paket Souvenir”
    - CTA sekunder: “Konsultasi via WhatsApp”
    - Foto hero berkualitas tinggi dari produk nyata.
 2. **Trust strip**
@@ -112,7 +112,7 @@ Urutan bagian:
    - 3–6 kartu produk; foto, nama, ringkasan isi, harga atau “mulai dari” yang valid, CTA detail.
 5. **Mengapa memilih kami**
    - Keunggulan yang dapat dibuktikan dan dijelaskan dengan contoh.
-6. **Hampers perusahaan**
+6. **Souvenir perusahaan**
    - Informasi custom logo/kartu, kuantitas, timeline, permintaan penawaran.
 7. **Portofolio pilihan**
    - Foto proyek nyata, jenis pesanan, kebutuhan klien (dengan izin).
@@ -125,11 +125,11 @@ Urutan bagian:
 11. **Artikel terbaru**
     - 3 artikel yang relevan.
 12. **CTA penutup**
-    - “Masih bingung memilih hampers? Ceritakan kebutuhan dan anggaran Anda.”
+    - “Masih bingung memilih Souvenir? Ceritakan kebutuhan dan anggaran Anda.”
 13. **Footer** lengkap.
 
 ### 5.2 Tentang `/tentang/`
-- H1: “Tentang Hampers Lebaran”
+- H1: “Tentang Souvenir Kantor”
 - Cerita dan latar belakang brand (diisi dari fakta pemilik).
 - Misi, prinsip kualitas, dan cara memilih produk.
 - Foto tim/workspace/proses yang autentik jika tersedia.
@@ -161,8 +161,8 @@ Wajib menampilkan:
 - Breadcrumb yang terlihat dan BreadcrumbList JSON-LD.
 - Product/Offer structured data hanya bila sesuai fakta dan pedoman platform.
 
-### 5.5 Kategori hampers perusahaan `/paket/perusahaan/`
-- H1: “Hampers Lebaran Perusahaan untuk Karyawan dan Relasi Bisnis”
+### 5.5 Kategori Souvenir perusahaan `/paket/perusahaan/`
+- H1: “Souvenir Kantor Perusahaan untuk Karyawan dan Relasi Bisnis”
 - Kebutuhan yang dilayani: karyawan, klien, vendor, mitra, pimpinan.
 - Opsi personalisasi dan branding yang benar-benar tersedia.
 - Form permintaan penawaran (opsional; jika ada, minimalkan data).
@@ -176,10 +176,10 @@ Wajib menampilkan:
 - Jangan menampilkan nama/logo klien tanpa izin.
 - Filter kategori opsional.
 - Alt text deskriptif; kompres gambar dan gunakan dimensi eksplisit.
-- CTA “Diskusikan konsep hampers Anda”.
+- CTA “Diskusikan konsep Souvenir Anda”.
 
 ### 5.7 Blog `/blog/`
-- Kategori editorial: inspirasi hampers, panduan anggaran, hampers perusahaan, kemasan & personalisasi, panduan pemesanan.
+- Kategori editorial: inspirasi Souvenir, panduan anggaran, Souvenir perusahaan, kemasan & personalisasi, panduan pemesanan.
 - Search/filter opsional jika jumlah artikel sudah cukup.
 - Setiap kartu memuat judul, ringkasan unik, gambar, tanggal terbit/ubah, dan penulis/editor yang nyata.
 - Hindari artikel tipis, repetitif, atau dibuat hanya untuk mengejar kata kunci.
@@ -200,7 +200,7 @@ Wajib menampilkan:
 
 ### 5.9 FAQ `/faq/`
 Pertanyaan awal yang perlu dijawab:
-- Bagaimana cara memesan hampers?
+- Bagaimana cara memesan Souvenir?
 - Apakah isi paket bisa disesuaikan?
 - Apakah tersedia kartu ucapan atau logo perusahaan?
 - Apakah ada minimum order?
@@ -231,13 +231,13 @@ Nomor tujuan: `6282131087971`
 Format URL: `https://wa.me/6282131087971?text={URL_ENCODED_MESSAGE}`
 
 Pesan default beranda:
-> Halo Hampers Lebaran, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
+> Halo Souvenir Kantor, saya ingin konsultasi Souvenir Kantor. Mohon informasi paket, harga, isi, dan estimasi pemesanan.
 
 Pesan dari detail paket:
-> Halo Hampers Lebaran, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
+> Halo Souvenir Kantor, saya tertarik dengan paket [NAMA PAKET]. Mohon informasi harga, isi paket, minimum order, dan estimasi produksi.
 
 Pesan perusahaan:
-> Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
+> Halo Souvenir Kantor, saya ingin meminta penawaran Souvenir Kantor perusahaan. Perkiraan jumlah: [JUMLAH]. Anggaran per paket: [ANGGARAN]. Tanggal dibutuhkan: [TANGGAL]. Kota tujuan: [KOTA].
 
 Persyaratan:
 - Gunakan URL-encoding yang benar untuk isi pesan.
@@ -337,20 +337,20 @@ Gunakan JSON-LD, valid, dan sinkron dengan konten yang terlihat:
 
 ### 7.8 Keyword & rencana konten
 Keyword adalah hipotesis awal, bukan janji volume pencarian:
-- hampers Lebaran
-- hampers Lebaran premium
-- hampers Lebaran perusahaan
-- hampers untuk karyawan
-- hampers untuk klien
-- hampers Lebaran custom
-- paket hampers Lebaran
-- hampers Lebaran sesuai budget
-- ide hampers untuk relasi bisnis
-- cara memilih hampers Lebaran perusahaan
+- Souvenir Kantor
+- Souvenir Kantor premium
+- Souvenir Kantor perusahaan
+- Souvenir untuk karyawan
+- Souvenir untuk klien
+- Souvenir Kantor custom
+- paket Souvenir Kantor
+- Souvenir Kantor sesuai budget
+- ide Souvenir untuk relasi bisnis
+- cara memilih Souvenir Kantor perusahaan
 
 Pemetaan:
-- Beranda: hampers Lebaran + brand/value proposition.
-- Kategori perusahaan: hampers Lebaran perusahaan, hampers karyawan/klien.
+- Beranda: Souvenir Kantor + brand/value proposition.
+- Kategori perusahaan: Souvenir Kantor perusahaan, Souvenir karyawan/klien.
 - Kategori premium/ekonomis: intent sesuai kategori dan harga aktual.
 - Detail paket: nama paket + karakteristik yang benar.
 - Blog: pertanyaan informasional dan panduan pembelian; hindari menargetkan keyword sama secara identik pada banyak halaman.
@@ -423,7 +423,7 @@ Jangan menjadikan posisi ranking tunggal sebagai ukuran keberhasilan. Gunakan ev
 
 ## 12. Risiko dan asumsi
 - Harga, isi paket, stok, minimum order, wilayah layanan, alamat, email, kebijakan pengiriman, serta identitas legal belum diberikan.
-- Nama “Hampers Lebaran” hanya placeholder dan harus diganti jika brand resmi berbeda.
+- Nama “Souvenir Kantor” hanya placeholder dan harus diganti jika brand resmi berbeda.
 - Target 2026–2027 berarti praktik perlu ditinjau lagi saat peluncuran. Tidak ada teknik yang menjamin ranking, rich results, atau jawaban AI.
 - Jika kemudian diperlukan CMS, checkout, inventori, atau multi-bahasa, evaluasi sebagai fase terpisah.
 

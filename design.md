@@ -1,13 +1,13 @@
-# Design System & UI Specification — Hampers Lebaran
+# Design System & UI Specification — Souvenir Kantor
 **Versi:** 1.0  
 **Tanggal:** 20 Oktober 2026  
 **Status:** Design handoff untuk implementasi HTML + Bootstrap + CSS murni
 
-> Nama “Hampers Lebaran” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
+> Nama “Souvenir Kantor” adalah placeholder. Ganti dengan brand resmi sebelum publikasi. Gunakan foto produk dan klaim bisnis yang autentik; jangan mengisi katalog dengan harga, testimoni, logo klien, atau sertifikasi fiktif.
 
 ## 1. Arah desain
 
-**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau Lebaran yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
+**Konsep:** premium, hangat, modern, elegan, dan ramah. Tampilan menggabungkan hijau Kantor yang khas dengan warna ivory, putih hangat, dan aksen emas lembut. Hindari tampilan terlalu ramai, gradien mencolok, bayangan berat, atau dekorasi Islami berlebihan.
 
 **Karakter visual**
 - Premium: whitespace luas, foto produk besar, grid rapi.
@@ -136,13 +136,13 @@ Jaga ukuran body setidaknya sekitar 16px pada perangkat mobile. Heading besar bo
 
 ## 6. Hero homepage
 
-**Desktop layout:** dua kolom. Copy di kiri, foto hampers utama di kanan. Di mobile, copy di atas dan foto sesudahnya.
+**Desktop layout:** dua kolom. Copy di kiri, foto Souvenir utama di kanan. Di mobile, copy di atas dan foto sesudahnya.
 
 Contoh copy:
-- Eyebrow: `HAMPERS LEBARAN 2027`
+- Eyebrow: `Souvenir Kantor 2027`
 - H1: **“Berbagi Hangat, Mengirimkan Makna.”**
-- Supporting text: “Temukan hampers Lebaran untuk keluarga, sahabat, karyawan, dan relasi bisnis. Pilih paket yang sesuai kebutuhan atau konsultasikan hampers custom bersama tim kami.”
-- CTA primary: “Lihat Paket Hampers”
+- Supporting text: “Temukan Souvenir Kantor untuk keluarga, sahabat, karyawan, dan relasi bisnis. Pilih paket yang sesuai kebutuhan atau konsultasikan Souvenir custom bersama tim kami.”
+- CTA primary: “Lihat Paket Souvenir”
 - CTA secondary: “Konsultasi via WhatsApp”
 - Microcopy: “Isi paket, harga, dan jadwal dikonfirmasi sebelum pesanan diproses.” (gunakan hanya jika sesuai proses aktual)
 
@@ -179,11 +179,11 @@ Contoh markup Bootstrap:
       width="800"
       height="600"
       loading="lazy"
-      alt="Hampers Lebaran dalam kotak hijau dengan pilihan produk di dalamnya"
+      alt="Souvenir Kantor dalam kotak hijau dengan pilihan produk di dalamnya"
     >
   </a>
   <div class="card-body d-flex flex-column">
-    <p class="package-card__eyebrow">Hampers Keluarga</p>
+    <p class="package-card__eyebrow">Souvenir Keluarga</p>
     <h3 class="h4 card-title">Paket Silaturahmi</h3>
     <p class="card-text">Deskripsi singkat isi paket berdasarkan katalog aktual.</p>
     <p class="package-card__price">Rp xxx.xxx</p>
@@ -291,7 +291,7 @@ CTA primer menggunakan kalimat tindakan. Jangan memakai “Klik di sini”. Past
 
 Contoh URL:
 ```text
-https://wa.me/6282131087971?text=Halo%20Hampers%20Lebaran%2C%20saya%20ingin%20konsultasi%20hampers%20Lebaran.
+https://wa.me/6282131087971?text=Halo%20Souvenir%20Kantor%2C%20saya%20ingin%20konsultasi%20Souvenir%20Kantor.
 ```
 
 Contoh helper JavaScript vanilla:
@@ -309,7 +309,7 @@ Field yang disarankan:
 - Nama (wajib).
 - Nomor WhatsApp (wajib jika tindak lanjut dilakukan lewat WhatsApp).
 - Nama perusahaan (opsional).
-- Jumlah hampers.
+- Jumlah Souvenir.
 - Anggaran per paket (opsional, dropdown dengan rentang yang disetujui bisnis).
 - Tanggal dibutuhkan.
 - Kota tujuan.

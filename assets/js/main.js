@@ -1,5 +1,5 @@
 /**
- * Hampers Lebaran — main.js
+ * Souvenir Kantor — main.js
  * Vanilla JS: navbar scroll, fade-in observer, WA builder, mobile menu, filter
  */
 
@@ -19,10 +19,10 @@
 
   /* Default messages */
   const WA_MSG_DEFAULT =
-    'Halo Hampers Lebaran, saya ingin konsultasi hampers Lebaran. Mohon informasi paket, harga, isi, dan estimasi pemesanan.';
+    'Halo Souvenir Kantor, saya ingin konsultasi Souvenir Kantor. Mohon informasi paket, harga, isi, dan estimasi pemesanan.';
 
   const WA_MSG_CORPORATE =
-    'Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan. Mohon informasi harga, minimum order, dan opsi kustomisasi.';
+    'Halo Souvenir Kantor, saya ingin meminta penawaran Souvenir Kantor perusahaan. Mohon informasi harga, minimum order, dan opsi kustomisasi.';
 
   /* Set all WA links on page */
   function initWhatsAppLinks() {
@@ -168,7 +168,7 @@
       const notes = (form.querySelector('#quoteNotes') || {}).value || '';
       const phone = (form.querySelector('#quotePhone') || {}).value || '';
 
-      let msg = `Halo Hampers Lebaran, saya ingin meminta penawaran hampers Lebaran perusahaan.\n\n`;
+      let msg = `Halo Souvenir Kantor, saya ingin meminta penawaran Souvenir Kantor perusahaan.\n\n`;
       msg += `Nama: ${name}\n`;
       if (company) msg += `Perusahaan: ${company}\n`;
       msg += `Jumlah paket: ${qty}\n`;
@@ -217,13 +217,13 @@
     'silaturahmi': {
       id: 'silaturahmi',
       title: 'Paket Silaturahmi',
-      category: 'Hampers Keluarga',
+      category: 'Souvenir Keluarga',
       badgeIcon: '🏡',
       price: 'Rp 385.000 – Rp 450.000',
       priceNote: 'Harga final dikonfirmasi sesuai opsi toples & isi saat konsultasi',
       image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=80&auto=format',
-      imageAlt: 'Paket Silaturahmi — hampers Lebaran keluarga dalam kotak Lebaran eksklusif',
-      desc: 'Pilihan terfavorit untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Kombinasi manis, gurih, dan segar dalam kemasan hardbox hijau Lebaran beraksen pita emas mewah.',
+      imageAlt: 'Paket Silaturahmi — Souvenir Kantor keluarga dalam kotak Kantor eksklusif',
+      desc: 'Pilihan terfavorit untuk mempererat silaturahmi dengan keluarga besar dan sahabat tercinta. Kombinasi manis, gurih, dan segar dalam kemasan hardbox hijau Kantor beraksen pita emas mewah.',
       items: [
         'Kurma Sukari Al-Qassim Premium (Toples Segi-6 Kedap Udara 250g)',
         'Kastengel Keju Edam Asli Wijsman (Toples Kaca Silinder 300g)',
@@ -233,24 +233,24 @@
         'Bonus Tasbih Kayu Cendana & Pocket Sajadah Travel Praktis'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Exclusive Hardbox Lebaran Embossed Foil' },
+        { label: 'Kemasan', value: 'Exclusive Hardbox Kantor Embossed Foil' },
         { label: 'Min. Order', value: '1 Paket (Bisa Satuan)' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
         { label: 'Ketahanan', value: '3–6 Bulan (100% Halal)' }
       ],
-      personalization: 'Gratis Kartu Ucapan Lebaran Custom (Nama Pengirim & Penerima) + Pita Satin Lebaran/Emas.',
-      waText: 'Halo Hampers Lebaran, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
+      personalization: 'Gratis Kartu Ucapan Kantor Custom (Nama Pengirim & Penerima) + Pita Satin Kantor/Emas.',
+      waText: 'Halo Souvenir Kantor, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
       detailUrl: 'paket-silaturahmi.html'
     },
     'prestige': {
       id: 'prestige',
       title: 'Paket Prestige',
-      category: 'Hampers Premium',
+      category: 'Souvenir Premium',
       badgeIcon: '✨',
       price: 'Rp 850.000 – Rp 1.250.000',
       priceNote: 'Pilihan tier luxury gift untuk relasi penting & VIP',
       image: 'https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80&auto=format',
-      imageAlt: 'Paket Prestige — hampers Lebaran premium mewah untuk relasi bisnis VIP',
+      imageAlt: 'Paket Prestige — Souvenir Kantor premium mewah untuk relasi bisnis VIP',
       desc: 'Pengalaman gifting tingkat tinggi berkelas eksklusif. Dirancang khusus untuk memukau relasi bisnis penting, mitra strategis, serta keluarga terhormat dengan kurma Medjool jumbo pilihan dan kue kering premium berkeju tua Belanda.',
       items: [
         'Kurma Medjool California Jumbo Grade A (Jar Kaca Segel Kedap Udara 400g)',
@@ -263,51 +263,51 @@
         'Sajadah Tenun Halus Sutra Turkey Motif Kaligrafi Eksklusif'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Luxury Two-Tier Hardbox Beludru Lebaran' },
+        { label: 'Kemasan', value: 'Luxury Two-Tier Hardbox Beludru Kantor' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
         { label: 'Ketahanan', value: '6 Bulan (Segel Kedap Udara)' }
       ],
-      personalization: 'Seal Lilin Cap Lebaran (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
-      waText: 'Halo Hampers Lebaran, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
+      personalization: 'Seal Lilin Cap Kantor (Wax Seal), Kartu Ucapan Tebal Letterpress, Grafir Nama/Logo Kayu.',
+      waText: 'Halo Souvenir Kantor, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
       detailUrl: 'paket-prestige.html'
     },
     'sahabat': {
       id: 'sahabat',
       title: 'Paket Sahabat',
-      category: 'Hampers Ekonomis',
+      category: 'Souvenir Ekonomis',
       badgeIcon: '💚',
       price: 'Rp 175.000 – Rp 225.000',
       priceNote: 'Sangat terjangkau untuk berbagi dalam jumlah banyak',
       image: 'https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=800&q=80&auto=format',
-      imageAlt: 'Paket Sahabat — hampers ekonomis Lebaran kemasan rapi dan berkah',
-      desc: 'Berbagi kebahagiaan Hari Raya tidak harus mahal. Paket Sahabat dirancang dengan komposisi seimbang, kemasan kokoh estetik, dan rasa kue yang lezat untuk berbagi berkah Lebaran kepada banyak orang sekaligus.',
+      imageAlt: 'Paket Sahabat — Souvenir ekonomis Kantor kemasan rapi dan berkah',
+      desc: 'Berbagi kebahagiaan Hari Raya tidak harus mahal. Paket Sahabat dirancang dengan komposisi seimbang, kemasan kokoh estetik, dan rasa kue yang lezat untuk berbagi berkah Kantor kepada banyak orang sekaligus.',
       items: [
         'Kurma Khalas Manis Lembut Al-Qassim (Box Cantik 250g)',
         'Sagu Keju Renyah Gurih Lumer di Lidah (Toples Tabung Segel 250g)',
         'Choco Almond Butter Cookies Manis Renyah (Toples Tabung Segel 250g)',
         'Sirup Jeruk Markisa Asli Segar Alami (Botol Kaca 350ml)',
-        'Kartu Ucapan Lebaran Hangtag Eid Mubarak & Pita Satin Lebaran'
+        'Kartu Ucapan Kantor Hangtag Eid Mubarak & Pita Satin Kantor'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Corrugated Box Lebaran Tebal + Sablon Emas' },
+        { label: 'Kemasan', value: 'Corrugated Box Kantor Tebal + Sablon Emas' },
         { label: 'Min. Order', value: '3 Paket' },
         { label: 'Waktu Produksi', value: '1–2 Hari Kerja' },
         { label: 'Ketahanan', value: '3–4 Bulan (100% Halal)' }
       ],
-      personalization: 'Kartu Ucapan Lebaran dengan nama pengirim/komunitas tercetak rapi.',
-      waText: 'Halo Hampers Lebaran, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
+      personalization: 'Kartu Ucapan Kantor dengan nama pengirim/komunitas tercetak rapi.',
+      waText: 'Halo Souvenir Kantor, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
       detailUrl: 'paket-sahabat.html'
     },
     'korporat': {
       id: 'korporat',
       title: 'Paket Korporat',
-      category: 'Hampers Perusahaan',
+      category: 'Souvenir Perusahaan',
       badgeIcon: '🏢',
       price: 'Mulai Rp 250.000 – Rp 1.500.000+',
       priceNote: 'Harga berjenjang sesuai tier anggaran & jumlah pesanan perusahaan',
       image: 'https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&q=80&auto=format',
-      imageAlt: 'Paket Korporat — hampers Lebaran perusahaan untuk karyawan dan relasi bisnis',
+      imageAlt: 'Paket Korporat — Souvenir Kantor perusahaan untuk karyawan dan relasi bisnis',
       desc: 'Solusi lengkap bagi divisi HR, GA, dan Procurement perusahaan. Dilengkapi fasilitas custom branding logo perusahaan pada pita, boks, kartu ucapan, dan merchandise pendukung, serta sistem pengiriman multi-alamat.',
       items: [
         'Pilihan Kombinasi Cookies Premium (Nastar, Kastengel, Putri Salju)',
@@ -324,18 +324,18 @@
         { label: 'Pengiriman', value: 'Multi-Alamat Kantor & Rumah Karyawan' }
       ],
       personalization: 'Penuh (Full Branding): Sablon logo pada box, pita custom nama perusahaan, kartu ucapan pesan direksi.',
-      waText: 'Halo Hampers Lebaran, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Hampers Korporat.',
+      waText: 'Halo Souvenir Kantor, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Souvenir Korporat.',
       detailUrl: 'paket-perusahaan.html'
     },
     'barokah': {
       id: 'barokah',
       title: 'Paket Barokah',
-      category: 'Hampers Keluarga Spesial',
+      category: 'Souvenir Keluarga Spesial',
       badgeIcon: '🏡',
       price: 'Rp 520.000 – Rp 620.000',
       priceNote: 'Paket komplit untuk momen kumpul hari raya keluarga besar',
       image: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=800&q=80&auto=format',
-      imageAlt: 'Paket Barokah — hampers keluarga spesial Lebaran kurma Ajwa dan kue aneka rasa',
+      imageAlt: 'Paket Barokah — Souvenir keluarga spesial Kantor kurma Ajwa dan kue aneka rasa',
       desc: 'Paket keluarga dengan keanekaragaman isi yang lebih melimpah. Menghadirkan kurma Ajwa Madinah pilihan nabi, aneka kue kering klasik kesukaan keluarga, kopi arabika drip, serta wewangian reed diffuser bernuansa Idul Fitri.',
       items: [
         'Kurma Ajwa Madinah Al-Munawwarah Asli (Box Akrilik Gold 250g)',
@@ -347,25 +347,25 @@
         'Reed Diffuser Aroma Jasmine Ramadhan + 5 Stick Rotan (Botol Elegan 50ml)'
       ],
       specs: [
-        { label: 'Kemasan', value: 'Rigid Hardbox Magnetik Lebaran + Pita Emas' },
+        { label: 'Kemasan', value: 'Rigid Hardbox Magnetik Kantor + Pita Emas' },
         { label: 'Min. Order', value: '1 Paket' },
         { label: 'Waktu Produksi', value: '2–3 Hari Kerja' },
         { label: 'Ketahanan', value: '4–6 Bulan' }
       ],
       personalization: 'Kartu Ucapan Lipat Eksklusif + Hangtag Personalisasi Nama Keluarga.',
-      waText: 'Halo Hampers Lebaran, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
+      waText: 'Halo Souvenir Kantor, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
       detailUrl: 'paket-barokah.html'
     },
     'custom': {
       id: 'custom',
       title: 'Paket Custom',
-      category: 'Hampers Custom',
+      category: 'Souvenir Custom',
       badgeIcon: '🎨',
       price: 'Menyesuaikan Budget & Spesifikasi',
       priceNote: 'Konsultasi gratis tanpa biaya komitmen awal',
       image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800&q=80&auto=format',
-      imageAlt: 'Paket Custom — hampers Lebaran rancangan bebas sesuai selera dan anggaran',
-      desc: 'Fleksibilitas tanpa batas! Kamu bebas menentukan setiap komponen hampers: memilih isi kue kesukaan, ukuran toples, jenis kurma, botol minuman, merchandise keramik/tekstil, hingga dimensi dan warna boks kemasan.',
+      imageAlt: 'Paket Custom — Souvenir Kantor rancangan bebas sesuai selera dan anggaran',
+      desc: 'Fleksibilitas tanpa batas! Kamu bebas menentukan setiap komponen Souvenir: memilih isi kue kesukaan, ukuran toples, jenis kurma, botol minuman, merchandise keramik/tekstil, hingga dimensi dan warna boks kemasan.',
       items: [
         'Pilihan Bebas 20+ Macam Kue Kering Tradisional & Modern',
         'Pilihan Kurma (Sukari, Medjool, Ajwa, Khalas)',
@@ -381,7 +381,7 @@
         { label: 'Konsultasi', value: 'Free Mockup & Rekomendasi Katalog' }
       ],
       personalization: '100% Kustomisasi sesuai keinginan Anda atau brand perusahaan.',
-      waText: 'Halo Hampers Lebaran, saya ingin merancang Paket Hampers Custom dengan anggaran dan isi tertentu. Mohon bantuannya.',
+      waText: 'Halo Souvenir Kantor, saya ingin merancang Paket Souvenir Custom dengan anggaran dan isi tertentu. Mohon bantuannya.',
       detailUrl: 'paket-custom.html'
     }
   };

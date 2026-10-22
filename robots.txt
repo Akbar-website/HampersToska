@@ -1,5 +1,5 @@
-# robots.txt — Hampers Lebaran (2026/2027 Edition)
-# https://hampersLebaran.vercel.app/robots.txt
+# robots.txt — Souvenir Kantor (2026/2027 Edition)
+# https://SouvenirKantor.vercel.app/robots.txt
 
 User-agent: *
 Allow: /
@@ -29,4 +29,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://hampersLebaran.vercel.app/sitemap.xml
+Sitemap: https://SouvenirKantor.vercel.app/sitemap.xml
