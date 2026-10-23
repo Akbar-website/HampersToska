@@ -1394,15 +1394,26 @@ textarea:focus-visible {
     gap: 0.5rem;
     align-items: flex-start;
     font-style: normal;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: var(--text-xs);
-    margin: 0.75rem 0 1rem;
-    line-height: 1.5;
+    /* Menghilangkan huruf miring bawaan tag address */
+    color: rgba(255, 255, 255, 0.75);
+    /* Warna sedikit lebih redup agar hirarkinya jelas */
+    font-size: 13px;
+    /* Sesuaikan ukuran font */
+    line-height: 1.6;
+    /* Memberi jarak antar baris agar tidak sesak */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    /* Memberi jarak ke tombol WhatsApp di bawahnya */
+    font-family: inherit;
+    /* Mengikuti font utama website */
 }
 
 .footer-address svg {
-    flex: 0 0 auto;
-    margin-top: 0.15rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+    /* Menurunkan ikon sedikit agar sejajar dengan baris pertama teks */
+    color: #d4a373;
+    /* Opsional: beri warna emas/kuning senada dengan teks "Event" */
 }
 
 .float-wa {
