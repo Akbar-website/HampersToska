@@ -1389,6 +1389,22 @@ textarea:focus-visible {
     color: #fff
 }
 
+.footer-address {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: var(--text-xs);
+    margin: 0.75rem 0 1rem;
+    line-height: 1.5;
+}
+
+.footer-address svg {
+    flex: 0 0 auto;
+    margin-top: 0.15rem;
+}
+
 .float-wa {
     position: fixed;
     bottom: 1.75rem;
@@ -2404,4 +2420,6 @@ textarea:focus-visible {
 }
 
 /* Foto set ROBOT: geser area potong ke kiri agar kotak terbuka tidak terpotong */
-img[src*="set-powerbank-notebook-botol"]{object-position:20% 50%}
+img[src*="set-powerbank-notebook-botol"] {
+    object-position: 20% 50%
+}
