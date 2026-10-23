@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/paket-:slug.html", "destination": "/paket/:slug.html", "permanent": true },
+    { "source": "/blog-:slug.html", "destination": "/blog/:slug.html", "permanent": true }
+  ]
+}
