@@ -80,13 +80,12 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
      Mark active nav link
   ============================================================ */
   function initActiveNav() {
-    const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+    // URL bersih (tanpa .html): cocokkan path persis atau satu bagian situs (mis. /paket/sahabat -> /paket)
+    const path = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
     document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
       const href = (link.getAttribute('href') || '').replace(/\/$/, '');
-      if (href && href !== '' && currentPath.startsWith(href)) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      } else if (href === '/' && currentPath === '') {
+      if (!href || href.charAt(0) !== '/') return; // lewati beranda ('/') dan link luar (WhatsApp)
+      if (path === href || path.indexOf(href + '/') === 0) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       }
@@ -240,7 +239,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: 'Gratis Kartu Ucapan Custom (Nama Pengirim & Penerima). Tanyakan juga opsi penambahan logo atau nama pada produk.',
       waText: 'Halo Souvenir Event, saya tertarik memesan Paket Silaturahmi. Mohon informasi ketersediaan, rincian isi, dan jadwal pengiriman.',
-      detailUrl: BASE_PATH + 'paket/silaturahmi.html'
+      detailUrl: '/paket/silaturahmi'
     },
     'prestige': {
       id: 'prestige',
@@ -267,7 +266,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: 'Kartu ucapan eksklusif dengan nama pengirim & penerima. Tanyakan opsi cetak atau grafir logo/nama pada produk dan tutup box.',
       waText: 'Halo Souvenir Event, saya ingin memesan Paket Prestige Premium. Mohon penawaran harga khusus dan opsi pengiriman eksklusif.',
-      detailUrl: BASE_PATH + 'paket/prestige.html'
+      detailUrl: '/paket/prestige'
     },
     'sahabat': {
       id: 'sahabat',
@@ -293,7 +292,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: 'Kartu ucapan dengan nama pengirim/komunitas tercetak rapi. Tanyakan opsi cetak logo atau nama pada notebook dan pulpen.',
       waText: 'Halo Souvenir Event, saya ingin konsultasi Paket Sahabat Ekonomis. Mohon info harga grosir dan jadwal pengiriman.',
-      detailUrl: BASE_PATH + 'paket/sahabat.html'
+      detailUrl: '/paket/sahabat'
     },
     'korporat': {
       id: 'korporat',
@@ -321,7 +320,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: 'Full Branding: logo perusahaan pada tutup box dan produk (sablon/grafir), kartu ucapan pesan direksi.',
       waText: 'Halo Souvenir Event, saya dari perusahaan ingin meminta penawaran resmi untuk Paket Souvenir Korporat.',
-      detailUrl: BASE_PATH + 'paket/perusahaan.html'
+      detailUrl: '/paket/perusahaan'
     },
     'barokah': {
       id: 'barokah',
@@ -348,7 +347,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: 'Kartu Ucapan Eksklusif dengan Nama Keluarga/Pengirim. Tanyakan opsi grafir atau cetak nama pada tumbler dan pulpen.',
       waText: 'Halo Souvenir Event, saya tertarik memesan Paket Barokah Keluarga. Mohon konfirmasi jadwal dan biaya pengiriman.',
-      detailUrl: BASE_PATH + 'paket/barokah.html'
+      detailUrl: '/paket/barokah'
     },
     'custom': {
       id: 'custom',
@@ -375,7 +374,7 @@ const BASE_PATH = /\/(?:paket|blog)\/[^/]*$/.test(window.location.pathname) ? '.
       ],
       personalization: '100% Kustomisasi sesuai keinginan Anda atau brand perusahaan.',
       waText: 'Halo Souvenir Event, saya ingin merancang Paket Souvenir Custom dengan anggaran dan isi tertentu. Mohon bantuannya.',
-      detailUrl: BASE_PATH + 'paket/custom.html'
+      detailUrl: '/paket/custom'
     }
   };
 

@@ -1,6 +1,26 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
-    { "source": "/paket-:slug.html", "destination": "/paket/:slug.html", "permanent": true },
-    { "source": "/blog-:slug.html", "destination": "/blog/:slug.html", "permanent": true }
+    {
+      "source": "/paket-:slug.html",
+      "destination": "/paket/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/blog-:slug.html",
+      "destination": "/blog/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/paket-:slug",
+      "destination": "/paket/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/blog-:slug",
+      "destination": "/blog/:slug",
+      "permanent": true
+    }
   ]
 }
