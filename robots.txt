@@ -1,5 +1,5 @@
 # robots.txt — Souvenir Event (2026/2027 Edition)
-# https://SouvenirEvent.vercel.app/robots.txt
+# https://souvenirevent.vercel.app/robots.txt
 
 User-agent: *
 Allow: /
@@ -29,4 +29,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://SouvenirEvent.vercel.app/sitemap.xml
+Sitemap: https://souvenirevent.vercel.app/sitemap.xml
