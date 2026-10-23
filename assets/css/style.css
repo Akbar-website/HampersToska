@@ -1407,6 +1407,7 @@ textarea:focus-visible {
 
 .footer-address {
     display: flex;
+    margin-bottom: 1.25rem !important;
     gap: 0.6rem;
     align-items: flex-start;
     font-style: normal !important;
@@ -1417,8 +1418,8 @@ textarea:focus-visible {
 }
 
 .footer-address svg {
-    flex-shrink: 0;
-    margin-top: 4px;
+    display: inline-flex !important;
+    margin-top: 0.5rem !important;
     /* Menyeimbangkan ikon dengan baris pertama teks */
     color: #d4a373;
     /* Warna emas, sesuaikan jika ingin putih */
